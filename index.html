@@ -129,7 +129,7 @@ a {
 	padding-top: 5px;
 	padding-left: 10px;
 	text-transform: uppercase;
-	z-index: -100;
+	z-index: 1;
 }
 
 a:hover {
@@ -225,13 +225,33 @@ p {
 .description-title {
 	font-family: 'Space Mono', monospace;
 	text-align: left;
+	height: 100%;
 	font-size: 28px;
 	line-height: 30px;
 	padding-top: 5px;
-	padding-left: 10px;
+	padding-left: 10px; 
 	text-transform: uppercase;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: -1000;
 }
 
+.artist {
+	display: inline-block;
+	font-family: 'Space Mono', monospace;
+	height: 100%;
+	text-align: left;
+	font-size: 14px;
+	line-height: 12px;
+	padding-top: 5px;
+	padding-left: 10px;
+	text-transform: uppercase;
+	z-index: -1000;
+}
 
 
 @media screen and (max-width: 640px) {
@@ -304,8 +324,9 @@ p {
 		      	</div>
 
 		      	<div id="speak2" class="thegrid-Sound">
-		      		<div class="description-title">失望した</div>
-		      		<a href="#title">EVA</a>
+		      		<div class="description-title">失望した<br>EVA - Rear View</div>
+		      		<!-- <div class="artist">EVA - REAR VIEW</div> -->
+		   
 		      	</div>
 
 		      	<div  class="thegrid">
@@ -358,8 +379,7 @@ p {
 		      		<p></p>
 		      	</div>
 		      	<div id="speak" class="thegrid-Sound">
-		      		<div class="description-title">Futurismo</div>
-		      		<a href="#title">EVA</a>
+		      		<div class="description-title">Futurismo<br>EVA - REAR VIEW</div>
 		      	</div>
 		      	<div class="thegrid">
 		      		<p></p>
@@ -396,8 +416,7 @@ p {
 		      		<p></p>
 		      	</div>
 		      	<div id="speak3" class="thegrid-Sound">
-		      		<div class="description-title">The End</div>
-		      		<a href="#title">EVA</a>
+		      		<div class="description-title">The End<br>EVA - REAR VIEW</div>
 		      	</div>
 		      	<div class="thegrid">
 		      		<p></p>
@@ -464,8 +483,7 @@ p {
 		      <div class="column">
 
 		      	<div id="speak4" class="thegrid-Sound">
-		      		<div class="description-title">Realizations</div>
-		      		<a href="#title">EVA</a>
+		      		<div class="description-title">Realizations<br>EVA - REAR VIEW</div>
 		      	</div>
 		      	<div class="thegrid">
 		      		<p></p>
@@ -515,8 +533,7 @@ p {
 		      <div class="column">
 
 		      	<div id="speak5" class="thegrid-Sound">
-		      		<div class="description-title">失望した</div>
-		      		<a href="#title">EVA</a>
+		      		<div class="description-title">Summer Nights<br>Stylzer</div>
 		      	</div>
 
 		      	<div class="thegrid">

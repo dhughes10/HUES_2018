@@ -1,0 +1,213 @@
+body {
+	margin: 0px;
+}
+
+.container {
+	width: 100%;
+	height: 1200px;
+}
+
+canvas[resize] {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.logo {	
+	color: white;
+  	fill: currentColor;
+	position: fixed;
+	margin-bottom: 35px;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 25px;
+	width: 70px;
+	left: 0px;
+	bottom: 0px;
+	z-index: 1000;
+}
+
+#square {
+	color: white;
+	fill: currentcolor;
+}
+
+.triangle {
+	position: fixed;
+	height: 80%;
+	color: ;
+	fill: currentcolor;
+	right: 0px;
+	bottom: 0px;
+	padding: 16px;
+	z-index: -1000;
+}
+
+.image {
+	transition: .5s ease-in-out;
+  	backface-visibility: hidden;
+}
+
+#imgLink:hover {
+	transition: .5s ease-in-out;
+	opacity: 0.3;
+}
+
+
+h1 {
+ 
+}
+
+h2 {
+        
+        letter-spacing: 1px;
+        color: white;
+}
+
+h3 {
+	position: fixed;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 25px;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	left: 0px;
+	top: 0px;
+
+}
+
+.images {
+	position: absolute;
+	width: 600px;
+	text-align: center;
+	align-item: center;
+	top: 160px;
+	right: 200px;
+	z-index: 10;
+/*	mix-blend-mode: multiply;*/
+}
+
+.menu {
+	position: fixed;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 50px;
+	right: 0px;
+	top: 0px;
+	z-index: 100;
+}
+
+
+
+a {
+	color: inherit;
+	text-decoration: none;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+a:hover {
+	color: white;
+}
+
+.mobile-menu {
+	display: none;
+}
+.mobileMenu-page {
+	display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+
+ 
+.images {
+	position: absolute;
+	width: 380px;
+	margin-left: -200px;
+	margin-top: -160px;
+	left: 50%;
+	top: 275px;
+}
+
+.menu {
+	display: none;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.logo {
+	width: 70px;
+	margin-bottom: 16px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.triangle {
+	height: 30%;
+	padding: 12px;
+	padding-bottom: 16px;
+}
+
+h3 {
+	margin-top: 20px;
+	margin-left: 20px;
+
+}
+
+.button {
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 25px;
+	right: 0px;
+	top: 0px;
+	z-index: 1000;
+}
+
+.mobile-menu {
+	position: fixed;
+	display: none;
+	text-align: center;
+	width: 100%;
+	z-index: 11;
+	margin-top: 10%;
+	z-index: 1000;
+}
+
+.mobileMenu-page {
+	display: block;
+	padding: 5px;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.works-menu {
+	display: none;
+	color: white;
+	font-weight: 200;
+	margin-top: 5%;
+}
+
+
+}
+
+
+
+
+
+
+

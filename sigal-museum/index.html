@@ -302,17 +302,16 @@ p {
 	opacity: .7;
 }
 
-
-@media screen and (max-width: 640px) {
-
-
-.column {
-	padding: 0px;
+.mobile-title {
+	display: none;
 }
 
+@media screen and (max-width: 840px) {
+
+
 .thegrid-work {
-	width: 77.4vw;
-	height: 80.92vw;
+	width: 92vw;
+	height: 96vw;
 	border: 1px solid black;
 	border-collapse: separate;
 	border-spacing: 0px;
@@ -324,8 +323,8 @@ p {
     -webkit-backface-visibility: hidden;
 }
 .thegrid-project {
-	width: 77.4vw;
-	height: 55.92vw;
+	width: 92vw;
+	height: 67vw;
 	border: 1px solid black;
 	border-collapse: separate;
 	border-spacing: 0px;
@@ -338,8 +337,8 @@ p {
 }
 
 .thegrid-NOline {
-	width: 77.4vw;
-	height: 80.92vw;
+	width: 92vw;
+	height: 96vw;
 	border: 0px solid black;
 	border-collapse: separate;
 	border-spacing: 0px;
@@ -351,6 +350,81 @@ p {
     -webkit-backface-visibility: hidden;
 }
 
+.thegrid-NOline {
+	display: none;
+
+}
+
+@media screen and (max-width: 640px) {
+
+.mobile-title {
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+.description-title {
+	padding-left: 0px;
+}
+
+
+a {
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: blue;
+}
+
+
+.thegrid-work {
+	width: 92.6vw;
+	height: 96.4vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+.thegrid-project {
+	width: 92.6vw;
+	height: 67.6vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.outer-container {
+/*	background-color: red;*/
+	height: auto;
+	margin: 0 auto;
+	width: 96%;
+	z-index:-10;
+	margin-top: 15px;
+	margin-left: 0px;
+	margin-bottom: 350px;
+}
+
+.flex-container {
+/*	background-color: blue;*/
+	text-align: left;
+	width: 100%;
+}
+
+.thegrid-NOline {
+	display: none;
+
+}
+
+}
 
 }
 </style>
@@ -361,6 +435,10 @@ p {
 	
 		<div class="outer-container" data-scroll-speed="6">
 		    <div class="flex-container">
+
+		    	<div class="mobile-title">
+				<a id="back" href="../WORK/index.html" class="description-title">&larr;Back</a><br>
+				</div>
 
 		      <div class="column">
 			      	<div class="thegrid-work">

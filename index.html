@@ -14,7 +14,7 @@
   <meta name="description" content="Hueṡ Graphic Design Studio">
   <meta name="keywords" content="hues,hueṡ,hue,hughes,graphic design,parsons,studio,portfolio,design,new york city,dylan,hughes,easton,easton pa,art,work,branding,books,photography,graphic,type,typography,communication,chill,chill dill,dill,ṡ,">
   <meta name="author" content="Dylan Hughes">
-  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="./assets/HUES_LOGO.png">
   <title>Hueṡ</title>
 </head>
 <style>
@@ -149,6 +149,11 @@ a:hover {
 	right: 100px;
 	width: 65vw;
 	z-index: -100;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+}
+
+.image-container-1:hover {
 }
 
 .image-container-2 {
@@ -157,6 +162,8 @@ a:hover {
 	left: -14.9vw;
 	width: 58vw;
 	z-index: -100;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
 }
 
 .image-container-3 {
@@ -170,10 +177,9 @@ a:hover {
 }
 
 .HUES-LOGO {
-	width: 73%;
-	text-align: left;
-	padding-left: 8px;
-	padding-top: 8px;
+	width: 100%;
+	padding-left: 0px;
+	padding-top: 0px;
 }
 
 
@@ -213,7 +219,7 @@ img {
 
 p {
     font-family: helvetica; 
-	font-size: 16px;
+	font-size: 1.03vw;
 	font-weight: 100;
 	line-height: ;
 	text-align: left;
@@ -228,7 +234,25 @@ p {
 	height: 100%;
 	font-size: 28px;
 	line-height: 30px;
-	padding-top: 5px;
+	padding-top: 10px;
+	padding-left: 10px; 
+	text-transform: uppercase;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: -1000;
+}
+
+.description-title-music {
+	font-family: 'Space Mono', monospace;
+	text-align: left;
+	height: 100%;
+	font-size: 28px;
+	line-height: 20px;
+	padding-top: 10px;
 	padding-left: 10px; 
 	text-transform: uppercase;
 	-webkit-touch-callout: none;
@@ -243,13 +267,11 @@ p {
 .artist {
 	display: inline-block;
 	font-family: 'Space Mono', monospace;
-	height: 100%;
+	padding-top: 0;
 	text-align: left;
-	font-size: 14px;
-	line-height: 12px;
-	padding-top: 5px;
-	padding-left: 10px;
-	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 5px;
+	text-transform: none;
 	z-index: -1000;
 }
 
@@ -295,7 +317,7 @@ p {
 
 	</div>
 	
-		<div class="outer-container">
+		<div class="outer-container" data-scroll-speed="6">
 		    <div class="flex-container">
 		      <div class="column">
 
@@ -324,13 +346,14 @@ p {
 		      	</div>
 
 		      	<div id="speak2" class="thegrid-Sound">
-		      		<div class="description-title">失望した<br>EVA - Rear View</div>
+		      		<div class="description-title-music">失望した<br>
+		      			<div class="artist">Eva - Rear View</div></div>
 		      		<!-- <div class="artist">EVA - REAR VIEW</div> -->
 		   
 		      	</div>
 
 		      	<div  class="thegrid">
-		      		<p></p>
+		      		<canvas id="stage" height="100%" width="100%"></canvas>
 		      	</div>
 
 		      	<div class="thegrid">
@@ -379,7 +402,8 @@ p {
 		      		<p></p>
 		      	</div>
 		      	<div id="speak" class="thegrid-Sound">
-		      		<div class="description-title">Futurismo<br>EVA - REAR VIEW</div>
+		      		<div class="description-title-music">Futurismo<br>
+		      			<div class="artist">Eva - Rear View</div></div>
 		      	</div>
 		      	<div class="thegrid">
 		      		<p></p>
@@ -401,7 +425,7 @@ p {
 	    </div>
 
 
-	    <div class="outer-container-2">
+	    <div class="outer-container-2" data-scroll-speed="6">
 		    <div class="flex-container">
 		      <div class="column">
 
@@ -416,7 +440,8 @@ p {
 		      		<p></p>
 		      	</div>
 		      	<div id="speak3" class="thegrid-Sound">
-		      		<div class="description-title">The End<br>EVA - REAR VIEW</div>
+		      		<div class="description-title-music">The End<br>
+		      			<div class="artist">Eva - Rear View</div></div>
 		      	</div>
 		      	<div class="thegrid">
 		      		<p></p>
@@ -483,7 +508,8 @@ p {
 		      <div class="column">
 
 		      	<div id="speak4" class="thegrid-Sound">
-		      		<div class="description-title">Realizations<br>EVA - REAR VIEW</div>
+		      		<div class="description-title-music">Realizations<br>
+		      			<div class="artist">Eva - Rear View</div></div>
 		      	</div>
 		      	<div class="thegrid">
 		      		<p></p>
@@ -509,16 +535,16 @@ p {
 	    </div>
 
 	     <div class="image-container-1">
-	    	<img class="HUES-1" src="./assets/HUES_WEB_1.png">
+	    	<img class="HUES-1"  src="./assets/HUES_WEB_1.png">
 	     </div>
 	    <div class="image-container-2">
-	    	<img class="HUES-2" src="./assets/HUES_WEB_2.png">
+	    	<img class="HUES-2"  src="./assets/HUES_WEB_2.png">
 	    </div>
-	    <div class="image-container-3">
+	    <div class="image-container-3"data-scroll-speed="6">
 	    	<img class="HUES-3" src="./assets/HUES_WEB_3.png">
 	    </div>
 
-	    <div class="outer-container-3">
+	    <div class="outer-container-3" data-scroll-speed="6">
 		    <div class="flex-container">
 		      <div class="column">
 
@@ -533,7 +559,8 @@ p {
 		      <div class="column">
 
 		      	<div id="speak5" class="thegrid-Sound">
-		      		<div class="description-title">Summer Nights<br>Stylzer</div>
+		      		<div class="description-title-music">Summer Nights<br>
+		      			<div class="artist">Stylizer</div></div>
 		      	</div>
 
 		      	<div class="thegrid">
@@ -747,6 +774,49 @@ var image = [
 	$("#speak6").mouseout(function() {
   	audio6.pause();
   	});
+
+	  $.fn.moveIt = function(){
+	  var $window = $(window);
+	  var instances = [];
+	  
+	  $(this).each(function(){
+	    instances.push(new moveItItem($(this)));
+	  });
+	  
+	  window.addEventListener('scroll', function(){
+	    var scrollTop = $window.scrollTop();
+	    instances.forEach(function(inst){
+	      inst.update(scrollTop);
+	    });
+	  }, {passive: true});
+	}
+
+	var moveItItem = function(el){
+	  this.el = $(el);
+	  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+	};
+
+	moveItItem.prototype.update = function(scrollTop){
+	  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+	};
+
+	// Initialization
+	$(function(){
+	  $('[data-scroll-speed]').moveIt();
+	});
+
+	$(window).on('scroll', function () {
+    var pixs = $(document).scrollTop()
+    pixs = pixs / 25;
+    $(".image-container-1").css({"-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)" })
+});
+
+$(window).on('scroll', function () {
+    var pixs = $(document).scrollTop()
+    pixs = pixs / 225;
+    $(".image-container-2").css({"-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)"})
+});
+
 
 </script>
 </html>

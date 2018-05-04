@@ -44,17 +44,6 @@ canvas[resize] {
 	z-index: -1000;
 }
 
-.image {
-	transition: .5s ease-in-out;
-  	backface-visibility: hidden;
-}
-
-#imgLink:hover {
-	transition: .5s ease-in-out;
-	opacity: 0.3;
-}
-
-
 h1 {
  
 }
@@ -76,18 +65,6 @@ h3 {
 	letter-spacing: 1.3px;
 	left: 0px;
 	top: 0px;
-
-}
-
-.images {
-	position: absolute;
-	width: 600px;
-	text-align: center;
-	align-item: center;
-	top: 160px;
-	right: 200px;
-	z-index: 10;
-/*	mix-blend-mode: multiply;*/
 }
 
 .menu {
@@ -100,7 +77,6 @@ h3 {
 	top: 0px;
 	z-index: 100;
 }
-
 
 
 a {
@@ -128,40 +104,7 @@ a:hover {
 @media screen and (max-width: 640px) {
 
  
-.images {
-	position: absolute;
-	width: 380px;
-	margin-left: -200px;
-	margin-top: -160px;
-	left: 50%;
-	top: 275px;
-}
 
-.menu {
-	display: none;
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.logo {
-	width: 70px;
-	margin-bottom: 16px;
-	margin-top: 20px;
-	margin-left: 20px;
-}
-
-.triangle {
-	height: 30%;
-	padding: 12px;
-	padding-bottom: 16px;
-}
-
-h3 {
-	margin-top: 20px;
-	margin-left: 20px;
-
-}
 
 .button {
 	position: fixed;
@@ -175,31 +118,6 @@ h3 {
 	right: 0px;
 	top: 0px;
 	z-index: 1000;
-}
-
-.mobile-menu {
-	position: fixed;
-	display: none;
-	text-align: center;
-	width: 100%;
-	z-index: 11;
-	margin-top: 10%;
-	z-index: 1000;
-}
-
-.mobileMenu-page {
-	display: block;
-	padding: 5px;
-	font-size: 18px;
-	text-decoration: none;
-	text-align: center;
-}
-
-.works-menu {
-	display: none;
-	color: white;
-	font-weight: 200;
-	margin-top: 5%;
 }
 
 

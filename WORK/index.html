@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="stylesheet" href="../main.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&subset=latin-ext,vietnamese');
+</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hueṡ Graphic Design Studio">
+  <meta name="keywords" content="hues,hueṡ,hue,hughes,graphic design,parsons,studio,portfolio,design,new york city,dylan,dylan hughes,easton,easton pa,art,work,branding,books,photography,graphic,type,typography,communication,chill,chill dill,dill,ṡ,">
+  <meta name="author" content="Dylan Hughes">
+  <link rel="shortcut icon" type="image/png" href="../assets/HUES_LOGO.png">
+  <title>Dylan Hughes</title>
+</head>
+<style>
+
+body {
+	overflow:hidden;
+	background-color: white;
+	color: black;
+}
+
+
+.container {
+	width: 100%;
+}
+
+.outer-container {
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 15px;
+	padding-left: 15px;
+	z-index:-10;
+
+}
+
+.flex-container {
+	text-align: left;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-flex-direction: row;
+   	flex-direction: row;
+   	-webkit-justify-content: flex-start;
+   justify-content: flex-start;
+}
+
+.thegrid {
+	display: block;
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+}
+
+.thegrid:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.thegrid-NOline {
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 0px solid white;
+	padding: 0;
+	margin: -1px;
+}
+
+
+.thegrid-work {
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-work:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.menu-container {
+	display: inline-table;
+	padding: 0;
+	padding-top: 5px;
+	margin: -1px;
+}
+
+
+a {
+	display: inline-block;
+	font-family: 'helvetica', monospace;
+	text-align: left;
+	font-size: 14px;
+	line-height: 12px;
+	padding-top: 5px;
+	padding-left: 10px;
+	text-transform:;
+	z-index: 1;
+	color: black;
+	text-decoration: none;
+	-webkit-backface-visibility: hidden;
+}
+
+a:hover {
+	text-decoration: underline;
+	-webkit-backface-visibility: hidden;
+}
+
+#work {
+	display: block;
+	padding-top: 0;
+	padding-left: 0;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+#work:hover {
+	display: block;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.row {
+
+/*	min-width: 200px;*/
+	padding: 0px;
+	margin: -0px;
+}
+
+
+.HUES-LOGO {
+	width: 88%;
+	text-align: left;
+	padding-left: 8px;
+	padding-top: 8px;
+}
+
+
+
+img {
+  max-width: 100%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.title {
+	width: 100%;
+	color: black;
+	text-align: left;
+	font-size: 13.4vw;
+	font-family: 'helvetica', monospace;
+	font-weight: 400;
+	line-height: 11vw;
+	padding: 0;
+	margin-left: -11.5px;
+	text-transform: uppercase;
+}
+
+.title-one {
+	color: black;
+	position: absolute;
+	top: -175px;
+	z-index: -11;
+}
+
+.intro {
+	width: 100%;
+	margin:0px auto;
+	align-item: center;
+	text-align: center;
+	padding-bottom: 120px;
+}
+
+p {
+    font-family: helvetica; 
+	font-size: 1.03vw;
+	font-weight: 100;
+	line-height: ;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin: 0;
+}
+
+.description-title {
+	display: inline;
+	font-family: 'helvetica';
+	font-weight: bold;
+	letter-spacing: -.6px;
+	text-align: left;
+	height: 100%;
+	font-size: 28px;
+	line-height: 30px;
+	padding-top: 5px;
+	padding-left: 10px; 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: -1000;
+}
+
+.self-description {
+	width: 85%;
+	font-family: 'helvetica';
+	text-align: left;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 11px;
+	padding-top: 5px; 
+}
+
+.artist {
+	display: inline-block;
+	font-family: 'Space Mono', monospace;
+	height: 100%;
+	text-align: left;
+	font-size: 14px;
+	line-height: 12px;
+	padding-top: 5px;
+	padding-left: 10px;
+	text-transform: uppercase;
+	z-index: -1000;
+}
+
+
+.workIMG {
+	width: 100%;
+  	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+ 	align-items: center;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    text-align: center;
+	align-item: center;
+	-webkit-backface-visibility: hidden;
+}
+
+.workIMG:hover {
+	opacity: .7;
+}
+
+
+@media screen and (max-width: 640px) {
+
+
+.thegrid-work {
+	width: 42.57vw;
+	height: 44.506vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+.thegrid-NOline {
+	width: 42.57vw;
+	height: 44.506vw;
+	border: 0px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+
+}
+</style>
+<body>
+
+	
+	</div>
+	
+		<div class="outer-container">
+		    <div class="flex-container">
+
+		    	 	<div class="thegrid-work">
+		      			<a id="work" href="../identity/index.html">
+		      			<img class="workIMG" src="../assets/PORTFOLIO_IMG_012.png">
+		      			</a>
+		      		</div>
+
+			      	<div class="thegrid-work">
+		      			<a id="work" href="../sigal-museum/index.html">
+		      			<img class="workIMG" src="../assets/PORTFOLIO_IMG_001.png">
+		      			</a>
+		      		</div>
+
+		      		<div class="thegrid-work">
+			      		<a id="work" href="../index.html">
+			      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_013.png">
+			      		</a>
+			      	</div>
+
+			      	<div class="thegrid-work">
+		      			<a id="work" href="../parsons-festival/index.html">
+		      				<img class="workIMG" src="../assets/PORTFOLIO_IMG_016.gif">
+		      	   		 </a>
+		      		</div>
+
+		      		<div class="thegrid-NOline">
+		      		<div class="description-title">Dylan Hughes</div><br>
+		      		<div class="self-description">Designer. BFA Communication Design major at Parsons School <br>of Design.</div><br>
+		      		<a href="../index.html">Resume</a><br>
+			      	<a href="../index.html">Portfolio</a><br><br>
+		      	</div>
+			      	
+		      </div>
+		       <div class="flex-container">
+
+		      	<div class="thegrid-work">
+		      		<a id="work" href="../the-void/index.html">
+		      				<img class="workIMG" src="../assets/PORTFOLIO_IMG_009.png">
+		      			</a>
+		      	</div>
+
+		      	<div class="thegrid-work">
+			      		<a id="work" href="../bellevue-literary-review/index.html">
+			      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_022.png">
+			      		</a>
+			      	</div>
+
+				<div class="thegrid-work">
+		      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_023.png">
+		      	</div>
+
+				<div  class="thegrid-work">
+		      		<a id="work" href="../repetition/index.html">
+		      			<img class="workIMG" src="../assets/PORTFOLIO_IMG_017.png">
+		      		</a>
+		      	</div>
+
+		      </div>
+
+		      <div class="flex-container">
+
+		      	<div class="thegrid-work">
+		      		<a id="work" href="../tompkins-square/index.html">
+		      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_019.png">
+		      		</a>
+		      	</div>
+
+		      	<div class="thegrid-work">
+		      		<a id="work" href="../thinking-with-type/index.html">
+		      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_011.gif">
+		      		</a>
+		      	</div>
+		      	
+
+		      	<div class="thegrid-work">
+		      		<a id="work" href="">
+		   			<img class="workIMG" src="../assets/PORTFOLIO_IMG_020.png">
+		   			</a>
+		      	</div>
+
+		      	<div class="thegrid-work">
+			      		<a id="work" href="../crunch-typeface/index.html">
+		      				<img class="workIMG" src="../assets/PORTFOLIO_IMG_021.png">
+		      			</a>
+			    </div>
+
+		      </div>
+
+		      </div>
+	    	</div>
+	  
+	    </div>
+		
+</body>
+
+<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+
+<script>
+
+$( ".button" ).click(function(){
+	$(".mobile-menu").slideToggle();
+	$(".images").toggle();
+	$(".intro").toggle();
+	$(".title").toggle();
+	$(".outer-container").toggle();
+	 });
+
+$( ".works" ).click(function(){
+	$(".works-menu").slideToggle();
+	 });
+
+
+</script>
+</html>

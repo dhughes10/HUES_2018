@@ -28,23 +28,26 @@ body {
 
 .container {
 	width: 100%;
+	margin: 0;
 }
 
 .outer-container {
 	height: auto;
 	margin: 0 auto;
 	width: 100%;
-	padding-top: 15px;
-	padding-left: 15px;
 	z-index:-10;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 350px;
 
 }
 
 .flex-container {
+/*	background-color: blue;*/
 	text-align: left;
-	width: 100%;
+	width: 98%;
 	height: auto;
-	margin: 0 auto;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-wrap: wrap;
@@ -82,7 +85,7 @@ body {
 
 .thegrid-work {
 	width: 19.35vw;
-	height: 20.23vw;
+	height: 20.27vw;
 	border: 1px solid black;
 	border-collapse: separate;
 	border-spacing: 0px;
@@ -261,6 +264,62 @@ p {
 	opacity: .7;
 }
 
+@media screen and (max-width: 1040px) {
+
+.thegrid-work {
+	width: 30.756825vw;
+	height: 32.155585vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-NOline {
+	display: none;
+
+}
+
+.self-description{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 840px) {
+
+
+.thegrid-work {
+	width: 42.57vw;
+	height: 44.506vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+.thegrid-NOline {
+	width: 42.57vw;
+	height: 44.506vw;
+	border: 0px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-NOline {
+	display: none;
+
+}
+
 
 @media screen and (max-width: 640px) {
 
@@ -287,7 +346,12 @@ p {
     z-index: 1;
     -webkit-backface-visibility: hidden;
 }
+.thegrid-NOline {
+	display: none;
 
+}
+}
+}
 
 }
 </style>

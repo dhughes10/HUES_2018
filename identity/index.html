@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="stylesheet" href="./main.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&subset=latin-ext,vietnamese');
+</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hueṡ Graphic Design Studio">
+  <meta name="keywords" content="hues,hueṡ,hue,hughes,graphic design,parsons,studio,portfolio,design,new york city,dylan,dylan hughes,easton,easton pa,art,work,branding,books,photography,graphic,type,typography,communication,chill,chill dill,dill,ṡ,sigal,parsons,communication design,identity,2018,graphic,graphic standards,graphic standards manual,manual,brand,brand guidelines,binder,staten island, staten,island,transporation,transportation system,system,identity system,mta,dot,new york,new york city,wayfinding,logo,logomark,ferry,train,terminal,staten island ferry,staten island railway,ferry terminals,whitehall,st. george,massimo,vignelli,massimo vignelli,nasa,mundane,thesis,dehumanizing,storytelling,routine,commute,commuter,travel,family,culture,commuter culture,">
+  <meta name="author" content="Dylan Hughes">
+  <link rel="shortcut icon" type="image/png" href="../assets/HUES_LOGO.png">
+  <title>Identity</title>
+</head>
+<style>
+
+body {
+	overflow:hidden;
+	background-color: white;
+	color: black;
+}
+
+
+.container {
+	width: 100%;
+}
+
+.outer-container {
+	display: table;
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 15px;
+	padding-left: 15px;
+	z-index:-10;
+
+}
+
+.outer-container-2 {
+	display: table;
+	position: relative;
+	left: 20.5vw;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 150px;
+	margin-top: 15.8vw;
+
+}
+
+.outer-container-3 {
+	display: table;
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 150px;
+	padding-left: 15px;
+	z-index:-10;
+
+}
+
+.flex-container {
+	text-align: left;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-flex-direction: row;
+   	flex-direction: row;
+   	-webkit-justify-content: flex-start;
+   justify-content: flex-start;
+}
+
+.thegrid {
+	display: block;
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    z-index: 1;
+}
+
+.thegrid:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.thegrid-NOline {
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 0px solid white;
+	padding: 0;
+	margin: -1px;
+}
+
+
+.thegrid-work {
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-project {
+	display: block;
+	width: 38.7vw;
+	height: 28.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    z-index: 1;
+    background-color: rgba(3,0,30,0.2);
+}
+
+.thegrid-project:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.thegrid-work:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.menu-container {
+	display: inline-table;
+	padding: 0;
+	padding-top: 5px;
+	margin: -1px;
+}
+
+a {
+	display: inline-block;
+	font-family: 'helvetica', monospace;
+	text-align: left;
+	font-size: 14px;
+	line-height: 12px;
+	text-transform:;
+	z-index: 1;
+	color: black;
+	text-decoration: none;
+	-webkit-backface-visibility: hidden;
+}
+
+a:hover {
+	text-decoration: underline;
+	-webkit-backface-visibility: hidden;
+}
+
+#work {
+	display: block;
+	padding-top: 0;
+	padding-left: 0;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+#work:hover {
+	display: block;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.column {
+
+/*	min-width: 200px;*/
+	padding: 0px;
+	margin: -0px;
+}
+
+.HUES-LOGO {
+	width: 88%;
+	text-align: left;
+	padding-left: 8px;
+	padding-top: 8px;
+}
+
+
+
+img {
+  max-width: 100%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.title {
+	width: 100%;
+	color: black;
+	text-align: left;
+	font-size: 13.4vw;
+	font-family: 'helvetica', monospace;
+	font-weight: 400;
+	line-height: 11vw;
+	padding: 0;
+	margin-left: -11.5px;
+	text-transform: uppercase;
+}
+
+.title-one {
+	color: black;
+	position: absolute;
+	top: -175px;
+	z-index: -11;
+}
+
+.intro {
+	width: 100%;
+	margin:0px auto;
+	align-item: center;
+	text-align: center;
+	padding-bottom: 120px;
+}
+
+p {
+    font-family: helvetica; 
+	font-size: 1.03vw;
+	font-weight: 100;
+	line-height: ;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin: 0;
+}
+
+.description-title {
+	display: inline;
+	font-family: 'helvetica', monospace;
+	font-weight: bold;
+	letter-spacing: .05px;
+	text-align: left;
+	height: 100%;
+	font-size: 28px;
+	line-height: 30px;
+	padding-top: 5px;
+	padding-left: 10px; 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: -1000;
+}
+
+.self-description {
+	width: 91%;
+	font-family: 'helvetica';
+	text-align: left;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 13px;
+	padding-top: 5px; 
+}
+
+.artist {
+	display: inline-block;
+	font-family: 'Space Mono', monospace;
+	height: 100%;
+	text-align: left;
+	font-size: 14px;
+	line-height: 12px;
+	padding-top: 5px;
+	padding-left: 10px;
+	text-transform: uppercase;
+	z-index: -1000;
+}
+
+
+.workIMG {
+	width: 100%;
+  	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+ 	align-items: center;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    text-align: center;
+	align-item: center;
+	-webkit-backface-visibility: hidden;
+}
+
+.workIMG:hover {
+	opacity: .7;
+}
+
+
+@media screen and (max-width: 640px) {
+
+
+.thegrid-work {
+	width: 77.4vw;
+	height: 80.92vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+.thegrid-project {
+	width: 77.4vw;
+	height: 55.92vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-NOline {
+	width: 77.4vw;
+	height: 80.92vw;
+	border: 0px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+
+
+}
+</style>
+<body>
+
+	
+	</div>
+	
+		<div class="outer-container" data-scroll-speed="6">
+		    <div class="flex-container">
+			      	<div class="thegrid-work">
+			      		<img class="workIMG" src="../assets/identity/PORTFOLIO_IMG_012.png">
+			      	</div>	
+		     
+
+		      
+		      	<div class="thegrid-work">
+		      		<div class="self-description">The Staten Island transportation system provides a setting for both mundane <br>and exceptional events in a culture established by commuters. Because Staten Island is disjointed from the city, its inhabitants suffer rail and ferry commutes of up to four hours; this makes interaction while traveling inevitable, and as a result of these encounters, a communal commuter memory is formed.<br><br>
+		      		The project describes the relationship between the common commute and my family’s specific experience of it. My relatives embodied the commuter culture living on Staten Island, and their
+		      		</div>
+		      	</div>
+		      
+
+		      
+		      	<div class="thegrid-work">
+		      		<div class="self-description">anecdotes shaped my impression of the city as I grew up.
+		      		<br><br>
+		      		‘Identity’ is a graphic standards manual in the form of a binder. Conceptually, my identity is realized through family stories, because I see their commute as part of who I am. The dehumanizing visual design of the graphic standards manual illustrates the prosaic nature of the journey, while simultaneously masking the humanity revealed in the narratives. 
+		      		<br><br>
+		      		‘Routine’ is an experimental documentary in which footage of the Staten Island transportation system is overlaid with voiceovers in which my
+		      		</div>	
+		      	</div>
+		     
+
+		    
+		      	<div class="thegrid-work">
+		      	 <div class="self-description">family describe their experiences. The film frames their journeys abstractly to emphasize the drama my family draws from the ebb and flow of the commute.
+		      	 </div>
+		      	</div>
+		   
+
+		      
+
+		      	<div class="thegrid-NOline">
+		      		<a href="../WORK/index.html" class="description-title">&larr;Back</a><br>
+		      	</div>
+
+		      </div>
+
+		  <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-3.jpg">
+		      	 		<img class="workIMG" src="../assets/identity/identity-3.jpg">
+		      	 		</a>
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-1.jpg">
+		      	 		<img class="workIMG" src="../assets/identity/identity-1.jpg">
+		      	 		</a>
+		      	 	</div>
+		      	 	</div>
+
+		  <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-9.png">
+		      	 		<img class="workIMG" src="../assets/identity/identity-9.png">
+		      	 		</a>
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-5.png">
+		      	 		<img class="workIMG" src="../assets/identity/identity-5.png">
+		      	 		</a>
+		      	 	</div>
+		      	 	</div>
+
+		  <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-8.jpg">
+		      	 		<img class="workIMG" src="../assets/identity/identity-8.jpg">
+		      	 		</a>
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-15.png">
+		      	 		<img class="workIMG" src="../assets/identity/identity-15.png">
+		      	 		</a>
+		      	 	</div>
+		      	 	</div>
+
+		  <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-6.png">
+		      	 		<img class="workIMG" src="../assets/identity/identity-6.png">
+		      	 		</a>
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-10.png">
+		      	 		<img class="workIMG" src="../assets/identity/identity-10.png">
+		      	 		</a>
+		      	 	</div>
+		      	 	</div>
+
+		  <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-4.png">
+		      	 		<img class="workIMG" src="../assets/identity/identity-4.png">
+		      	 		</a>
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-13.jpg">
+		      	 		<img class="workIMG" src="../assets/identity/identity-13.jpg">
+		      	 		</a>
+		      	 	</div>
+		      	 	</div>
+
+		  <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-2.jpg">
+		      	 		<img class="workIMG" src="../assets/identity/identity-2.jpg">
+		      	 		</a>
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-12.png">
+		      	 		<img class="workIMG" src="../assets/identity/identity-12.png">
+		      	 		</a>
+		      	 	</div>
+		      	 	</div>
+
+		  <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-7.jpg">
+		      	 		<img class="workIMG" src="../assets/identity/identity-7.jpg">
+		      	 		</a>
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<a href="../assets/identity/identity-14.png">
+		      	 		<img class="workIMG" src="../assets/identity/identity-14.png">
+		      	 		</a>
+		      	 	</div>
+		      	 	
+		      </div>
+
+
+	    	</div>
+	  
+	    </div>
+		
+</body>
+
+<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+
+<script>
+
+$( ".button" ).click(function(){
+	$(".mobile-menu").slideToggle();
+	$(".images").toggle();
+	$(".intro").toggle();
+	$(".title").toggle();
+	$(".outer-container").toggle();
+	 });
+
+$( ".works" ).click(function(){
+	$(".works-menu").slideToggle();
+	 });
+
+</script>
+</html>

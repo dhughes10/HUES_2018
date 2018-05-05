@@ -19,6 +19,7 @@
 </head>
 <style>
 
+
 body {
 	overflow:hidden;
 	background-color: white;
@@ -26,52 +27,31 @@ body {
 }
 
 
-.container {
-	width: 100%;
-}
-
 .outer-container {
-	display: table;
+/*	background-color: red;*/
 	height: auto;
 	margin: 0 auto;
 	width: 100%;
-	padding-top: 15px;
-	padding-left: 15px;
 	z-index:-10;
-
-}
-
-.outer-container-2 {
-	display: table;
-	position: relative;
-	left: 20.5vw;
-	padding-left: 0px;
-	padding-top: 0px;
-	padding-bottom: 150px;
-	margin-top: 15.8vw;
-
-}
-
-.outer-container-3 {
-	display: table;
-	height: auto;
-	margin: 0 auto;
-	width: 100%;
-	padding-top: 150px;
+	margin-top: 15px;
 	padding-left: 15px;
-	z-index:-10;
+	margin-bottom: 350px;
 
 }
 
 .flex-container {
+/*	background-color: blue;*/
 	text-align: left;
-	width: 100%;
+	width: 98%;
 	height: auto;
-	margin: 0 auto;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-flex-direction: row;
+   	flex-direction: row;
+   	-webkit-justify-content: flex-start;
+   justify-content: flex-start;
 }
 
 .thegrid {
@@ -83,8 +63,6 @@ body {
 	border-spacing: 0px;
 	padding: 0;
 	margin: -1px;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
     z-index: 1;
 }
 
@@ -109,11 +87,23 @@ body {
 	border-spacing: 0px;
 	padding: 0;
 	margin: -1px;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
     z-index: 1;
     -webkit-backface-visibility: hidden;
 }
+
+.thegrid-work-1 {
+	width: 58.05vw;
+	height: 20.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+
 
 .thegrid-project {
 	display: block;
@@ -124,9 +114,8 @@ body {
 	border-spacing: 0px;
 	padding: 0;
 	margin: -1px;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
     z-index: 1;
+    background-color: rgba(0,0,0,0);
 }
 
 .thegrid-project:hover {
@@ -144,25 +133,28 @@ body {
 	margin: -1px;
 }
 
-
 a {
 	display: inline-block;
 	font-family: 'helvetica', monospace;
 	text-align: left;
 	font-size: 14px;
 	line-height: 12px;
-	padding-top: 5px;
-	padding-left: 10px;
 	text-transform:;
-	z-index: 1;
-	color: black;
+	z-index: 100;
+	color: blue;
 	text-decoration: none;
-	-webkit-backface-visibility: hidden;
 }
 
 a:hover {
 	text-decoration: underline;
-	-webkit-backface-visibility: hidden;
+}
+
+#back{
+	color: blue;
+}
+#back:hover{
+	color: blue;
+	text-decoration: underline;
 }
 
 #work {
@@ -170,7 +162,6 @@ a:hover {
 	padding-top: 0;
 	padding-left: 0;
 	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
 }
 
 #work:hover {
@@ -185,7 +176,6 @@ a:hover {
 	padding: 0px;
 	margin: -0px;
 }
-
 
 .HUES-LOGO {
 	width: 88%;
@@ -202,25 +192,6 @@ img {
   padding-top: 0px;
 }
 
-.title {
-	width: 100%;
-	color: black;
-	text-align: left;
-	font-size: 13.4vw;
-	font-family: 'helvetica', monospace;
-	font-weight: 400;
-	line-height: 11vw;
-	padding: 0;
-	margin-left: -11.5px;
-	text-transform: uppercase;
-}
-
-.title-one {
-	color: black;
-	position: absolute;
-	top: -175px;
-	z-index: -11;
-}
 
 .intro {
 	width: 100%;
@@ -262,13 +233,28 @@ p {
 }
 
 .self-description {
-	width: 90%;
+	width: 96%;
+	height: auto;
 	font-family: 'helvetica';
 	text-align: left;
 	font-size: 14px;
 	line-height: 16px;
 	padding-left: 13px;
-	padding-top: 5px; 
+	padding-top: 5px;
+
+	-webkit-columns: 3 200px;
+  	-moz-columns: 3 200px;
+  	columns: 3 200px;
+ 	-webkit-column-gap: 1em;
+ 	-moz-column-gap: 1em;
+ 	column-gap: 1em;
+}
+
+h2 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-family: 'helvetica';
+	padding-left: 13px;
 }
 
 .artist {
@@ -306,10 +292,165 @@ p {
 	display: none;
 }
 
-@media screen and (max-width: 840px) {
+.thegrid-mobiletext {
+	display: none;
+}
+
+.footer {
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	font-family: courier new;
+	margin-bottom: 40px;
+}
+
+.footerimg {
+	width: 50px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+
+	.thegrid-NOline {
+	width: 10.35vw;
+	height: 20.23vw;
+	flex-wrap: none;
+}
 
 
 .thegrid-work {
+	width: 22vw;
+	height: auto;
+}
+
+.thegrid-work-1 {
+	width: 63.4vw;
+	height: auto;
+}
+
+.thegrid-project {
+	width: 42.7vw;
+	height: 31vw;
+}
+
+	.self-description {
+	width: 97%;
+	font-size: 14px;
+	line-height: 16px;
+	-webkit-columns: 2;
+  	-moz-columns: 2;
+  	columns: 2;
+  	margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1380px) {
+
+	.workIMG {
+	width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+	.self-description {
+	width: 97%;
+	font-size: 14px;
+	line-height: 16px;
+	-webkit-columns: 3;
+  	-moz-columns: 3;
+  	columns: 3;
+  	margin-bottom: 8px;
+}
+
+}
+
+
+@media screen and (max-width: 1040px) {
+
+	.mobile-title {
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+a {
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: blue;
+}
+
+
+	.self-description {
+	width: 91%;
+	font-size: 14px;
+	line-height: 16px;
+	-webkit-columns: 3;
+  	-moz-columns: 3;
+  	columns: 3;
+  	margin-bottom: 12px;
+}
+
+.thegrid-work {
+	display: none;
+}
+
+.thegrid-work-1 {
+	width: 91.4vw;
+	height: auto;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-project {
+	display: block;
+	width: 45.7vw;
+	height: 33.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    background-color: rgba(0,0,0,0);
+}
+.thegrid-NOline {
+	display: none;
+}
+
+}
+
+
+@media screen and (max-width: 840px) {
+
+.mobile-title {
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+a {
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: blue;
+}
+
+	.self-description {
+	width: 91%;
+	font-size: 16px;
+	line-height: 18px;
+	-webkit-columns: 2;
+  	-moz-columns: 2;
+  	columns: 2;
+  	  	margin-bottom: 0px;
+}
+
+.thegrid-work {
+	display: inline-block;
 	width: 92vw;
 	height: 96vw;
 	border: 1px solid black;
@@ -317,8 +458,6 @@ p {
 	border-spacing: 0px;
 	padding: 0;
 	margin: -1px;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
     z-index: 1;
     -webkit-backface-visibility: hidden;
 }
@@ -330,8 +469,6 @@ p {
 	border-spacing: 0px;
 	padding: 0;
 	margin: -1px;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
     z-index: 1;
     -webkit-backface-visibility: hidden;
 }
@@ -344,14 +481,43 @@ p {
 	border-spacing: 0px;
 	padding: 0;
 	margin: -1px;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
     z-index: 1;
     -webkit-backface-visibility: hidden;
 }
 
+.thegrid-mobiletext {
+	display: inline-block;
+	width: 92vw;
+	height: auto;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	padding-bottom: 15px;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-work-1 {
+	display: none;
+}
+
 .thegrid-NOline {
 	display: none;
+
+}
+
+@media screen and (max-width: 740px){
+
+	.self-description {
+	width: 91%;
+	font-size: 16px;
+	line-height: 18px;
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+}
 
 }
 
@@ -365,6 +531,12 @@ p {
 
 .description-title {
 	padding-left: 0px;
+}
+
+.self-description {
+	width: 91%;
+	font-size: 16px;
+	line-height: 18px;
 }
 
 
@@ -383,8 +555,6 @@ a {
 	border-spacing: 0px;
 	padding: 0;
 	margin: -1px;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
     z-index: 1;
     -webkit-backface-visibility: hidden;
 }
@@ -396,10 +566,26 @@ a {
 	border-spacing: 0px;
 	padding: 0;
 	margin: -1px;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
     z-index: 1;
     -webkit-backface-visibility: hidden;
+}
+
+.thegrid-mobiletext {
+	display: block;
+	width: 92.6vw;
+	height: auto;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	padding-bottom: 15px;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-work-1 {
+	display: none;
 }
 
 .outer-container {
@@ -425,6 +611,7 @@ a {
 }
 
 }
+}
 
 }
 </style>
@@ -434,76 +621,71 @@ a {
 	</div>
 	
 		<div class="outer-container" data-scroll-speed="6">
-		    <div class="flex-container">
-
-		    	<div class="mobile-title">
+			<div class="mobile-title">
 				<a id="back" href="../WORK/index.html" class="description-title">&larr;Back</a><br>
-				</div>
+			</div>
 
-		      <div class="column">
+		    <div class="flex-container">
 			      	<div class="thegrid-work">
 			      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_001.png">
 			      	</div>	
-		      </div>
-
-		      <div class="column">
-		      	<div class="thegrid-work">
-		      		<div class="self-description">A new identity for the Sigal Museum <br>and Northampton County Historical & Genealogical Society. The concept of the corner mark identity comes from the idea of how history is highlighted, taught, and mainly framed.<br><br>
-		      		In the literal sense of how preserving the past is associated with framing a painting or a photograph but also more thoughtfully the concept of how we look at our past. It's important to ask, what are the stories we decide to tell and which ones we don't? Who are/aren't <br>we talking about?
-		      		</div>
-		      	</div>
-		      </div>
-
-		      <div class="column">
-		      	<div class="thegrid-work">
-		      		<div class="self-description">The frame identity creates a new opportunity to hear stories told from different perspectives. The canvas of the identity widens and maximizes itself to provide an openness to share compelling narratives.</div><br>
+		      <div class="thegrid-mobiletext">
+			    	<h2>Sigal Museum</h2>
+			    	<div class="self-description">
+			    	A new identity for the Sigal Museum and Northampton County Historical & Genealogical Society. The concept of the corner mark identity comes from the idea of how history is highlighted, taught, and mainly framed.<br><br>
+		      		In the literal sense of how preserving the past is associated with framing a painting or a photograph but also more thoughtfully the concept of how we look at our past. It's important to ask, what are the stories we decide to tell and which ones we don't? Who are and aren't we talking about?<br><br>
+		      		The frame identity creates a new opportunity to hear stories told from different perspectives. The canvas of the identity widens and maximizes itself to provide an openness to share compelling narratives.<br><br>
 		      		<a href="https://sigalmuseum.org/">sigalmuseum.org</a><br>
 		      		<a href="http://nchgspa.org/">nchgspa.org</a>	
+		      		</div>
 		      	</div>
-		      </div>
-
-		      <div class="column">
-		      	<div class="thegrid-work">
-		      		
-		      	</div>
-		      </div>
-
-		      <div class="column">
+		      	<div class="thegrid-work-1">
+		      		<h2>Sigal Museum</h2>
+			    	<div class="self-description">
+			    	A new identity for the Sigal Museum and Northampton County Historical & Genealogical Society. The concept of the corner mark identity comes from the idea of how history is highlighted, taught, and mainly framed.<br><br>
+		      		In the literal sense of how preserving the past is associated with framing a painting or a photograph but also more thoughtfully the concept of how we look at our past. It's important to ask, what are the stories we decide to tell and which ones we don't? Who are and aren't we talking about?<br><br>
+		      		The frame identity creates a new opportunity to hear stories told from different perspectives. The canvas of the identity widens and maximizes itself to provide an openness to share compelling narratives.<br><br>
+		      		<a href="https://sigalmuseum.org/">sigalmuseum.org</a><br>
+		      		<a href="http://nchgspa.org/">nchgspa.org</a>
+					</div>		      	
+				</div>
 
 		      	<div class="thegrid-NOline">
 		      		<a href="../WORK/index.html" class="description-title">&larr;Back</a><br>
 		      	</div>
-
-		      </div>
+		 	</div>
 
 		    
-		      	 <div class="column">
-
+		    <div class="flex-container">
 		      	 	<div class="thegrid-project">
 		      	 		<a href="https://sigalmuseum.org/">
 		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-web.png">
 		      	 		</a>
-		      	 		
 		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-identity.gif">
+		      	 	</div>
+		    </div>
 
-		      	 	<div class="thegrid-project">
+		    <div class="flex-container">
+		    		<div class="thegrid-project">
 		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-circus1.jpg">
-		      	 	</div>
-		      	 	<div class="thegrid-project">
-		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-bags.png">
 		      	 	</div>
 		      	 	<div class="thegrid-project">
 		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-history-here.gif">
 		      	 	</div>
+		    </div>
+
+		    <div class="flex-container">
+		    		<div class="thegrid-project">
+		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-bags.png">
+		      	 	</div>
 		      	 	<div class="thegrid-project">
 		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-flood1.gif">
 		      	 	</div>
-		      	 	
-		      	 </div>
-		      	 <div class="column">
-		      	 	<div class="thegrid-project">
-		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-identity.gif">
-		      	 	</div>
+		    </div>
+
+		    <div class="flex-container">
 		      	 	<div class="thegrid-project">
 		      	 		<a href="https://sigalmuseum.org/">
 		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-mobile.png">
@@ -512,20 +694,23 @@ a {
 		      	 	<div class="thegrid-project">
 		      	 		<img class="workIMG" src="../assets/sigal-museum/nchgs_identity.gif">
 		      	 	</div>
+		    </div>
+
+		    <div class="flex-container">
 		      	 	<div class="thegrid-project">
 		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-painting.jpg">
 		      	 	</div>
 		      	 	<div class="thegrid-project">
-		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-flood2.gif"></div>
-		      	 	
-		      	 </div>
+		      	 		<img class="workIMG" src="../assets/sigal-museum/sigal-flood2.gif">
+		      	 	</div>
+		    </div>
 
-		      </div>
+		</div>
 
-
+	    	<div class="footer">
+	    		<img class="footerimg" src="../assets/hues_footer.png"><br>
+	    		<txt>Dylan Hughes &copy; 2018</txt>
 	    	</div>
-	  
-	    </div>
 		
 </body>
 

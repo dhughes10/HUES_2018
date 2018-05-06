@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="stylesheet" href="./main.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&subset=latin-ext,vietnamese');
+</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hueṡ Graphic Design Studio">
+  <meta name="keywords" content="hues,hueṡ,hue,hughes,graphic design,parsons,studio,portfolio,design,new york city,dylan,dylan hughes,easton,easton pa,art,work,branding,books,photography,graphic,type,typography,communication,chill,chill dill,dill,ṡ,the void,void,the,hotel,hospitality,resort,destination,repurposing,mines,mines,climate change,global warming,regrowth,vegetation,death,life,coal,humanity,erosion,eroding,manipulation,human effects,geography,terrace,farming,stadium,filling,occupied,">
+  <meta name="author" content="Dylan Hughes">
+  <link rel="shortcut icon" type="image/png" href="../assets/HUES_LOGO.png">
+  <title>Hueṡ</title>
+</head>
+<style>
+
+body {
+	overflow:hidden;
+	background-color: black;
+	color: black;
+}
+
+
+.outer-container {
+/*	background-color: red;*/
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
+	z-index:-10;
+	margin-top: 15px;
+	padding-left: 15px;
+	margin-bottom: 350px;
+
+}
+
+.flex-container {
+/*	background-color: blue;*/
+	text-align: left;
+	width: 98%;
+	height: auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-flex-direction: row;
+   	flex-direction: row;
+   	-webkit-justify-content: flex-start;
+   justify-content: flex-start;
+}
+
+.thegrid {
+	display: block;
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 1px solid white;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+}
+
+.thegrid:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+
+.thegrid-NOline {
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 0px solid white;
+	padding: 0;
+	margin: -1px;
+}
+
+
+.thegrid-work {
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 1px solid white;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-work-1 {
+	width: 58.05vw;
+	height: 20.23vw;
+	border: 1px solid white;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+
+
+.thegrid-project {
+	display: block;
+	width: 38.7vw;
+	height: 28.23vw;
+	border: 1px solid white;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+}
+
+.thegrid-project:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+
+.thegrid-work:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+
+.menu-container {
+	display: inline-table;
+	padding: 0;
+	padding-top: 5px;
+	margin: -1px;
+}
+
+a {
+	display: inline-block;
+	font-family: 'helvetica', monospace;
+	text-align: left;
+	font-size: 14px;
+	line-height: 12px;
+	text-transform:;
+	z-index: 100;
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#back{
+	color: blue;
+}
+#back:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+#work {
+	display: block;
+	padding-top: 0;
+	padding-left: 0;
+	backface-visibility: hidden;
+}
+
+#work:hover {
+	display: block;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.column {
+
+/*	min-width: 200px;*/
+	padding: 0px;
+	margin: -0px;
+}
+
+.HUES-LOGO {
+	width: 88%;
+	text-align: left;
+	padding-left: 8px;
+	padding-top: 8px;
+}
+
+
+
+img {
+  max-width: 100%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+
+.intro {
+	width: 100%;
+	margin:0px auto;
+	align-item: center;
+	text-align: center;
+	padding-bottom: 120px;
+}
+
+p {
+	color: white;
+    font-family: helvetica; 
+	font-size: 1.03vw;
+	font-weight: 100;
+	line-height: ;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin: 0;
+}
+
+.description-title {
+	display: inline;
+	font-family: 'helvetica', monospace;
+	font-weight: bold;
+	letter-spacing: .05px;
+	text-align: left;
+	height: 100%;
+	font-size: 28px;
+	line-height: 30px;
+	padding-top: 5px;
+	padding-left: 10px; 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: -1000;
+}
+
+.self-description {
+	color: white;
+	width: 30%;
+	height: auto;
+	font-family: 'helvetica';
+	text-align: left;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 13px;
+	padding-top: 5px;
+
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+ 	-webkit-column-gap: 1em;
+ 	-moz-column-gap: 1em;
+ 	column-gap: 1em;
+}
+
+h2 {
+	color: white;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-family: 'helvetica';
+	padding-left: 13px;
+}
+
+.artist {
+	display: inline-block;
+	font-family: 'Space Mono', monospace;
+	height: 100%;
+	text-align: left;
+	font-size: 14px;
+	line-height: 12px;
+	padding-top: 5px;
+	padding-left: 10px;
+	text-transform: uppercase;
+	z-index: -1000;
+}
+
+
+.workIMG {
+	width: 100%;
+  	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+ 	align-items: center;
+    text-align: center;
+	align-item: center;
+	-webkit-backface-visibility: hidden;
+}
+
+.workIMG:hover {
+	opacity: .7;
+}
+
+.mobile-title {
+	display: none;
+}
+
+.thegrid-mobiletext {
+	display: none;
+}
+
+.footer {
+	color: white;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	font-family: courier new;
+	margin-bottom: 40px;
+}
+
+.footerimg {
+	width: 50px;
+	margin-bottom: 10px;
+	filter:invert(100%);
+}
+
+.image-container-1 {
+	position: absolute;
+	top: 20.3vw;
+	right: 70px;
+	width: 65vw;
+	z-index: -100;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    padding-bottom: 200px;
+    opacity: .8;
+}
+
+img {
+    max-width: 100%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+@media screen and (max-width: 1400px) {
+
+	.thegrid-NOline {
+	width: 10.35vw;
+	height: 20.23vw;
+	flex-wrap: none;
+}
+
+
+.thegrid-work {
+	width: 22vw;
+	height: auto;
+}
+
+.thegrid-work-1 {
+	width: 63.4vw;
+	height: auto;
+}
+
+.thegrid-project {
+	width: 42.7vw;
+	height: 31vw;
+}
+
+	.self-description {
+	width: 30%;
+	height: auto;
+
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+ 	-webkit-column-gap: 1em;
+ 	-moz-column-gap: 1em;
+ 	column-gap: 1em;
+  	margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1380px) {
+
+	.workIMG {
+	width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+	.self-description {
+	width: 30%;
+	height: auto;
+
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+ 	-webkit-column-gap: 1em;
+ 	-moz-column-gap: 1em;
+ 	column-gap: 1em;
+  	margin-bottom: 8px;
+}
+
+}
+
+
+@media screen and (max-width: 1040px) {
+
+	.mobile-title {
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+a {
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: blue;
+}
+
+
+	.self-description {
+	width: 30%;
+	height: auto;
+
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+ 	-webkit-column-gap: 1em;
+ 	-moz-column-gap: 1em;
+ 	column-gap: 1em;
+  	margin-bottom: 12px;
+}
+
+.thegrid-work {
+	display: none;
+}
+
+.thegrid-work-1 {
+	width: 91.4vw;
+	height: auto;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-project {
+	display: block;
+	width: 45.7vw;
+	height: 33.23vw;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+}
+.thegrid-NOline {
+	display: none;
+}
+
+.image-container-1 {
+	position: absolute;
+	top: 20.3vw;
+	right: -19.3px;
+	width: 65vw;
+	z-index: -100;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    padding-bottom: 200px;
+    opacity: .8;
+}
+
+}
+
+
+@media screen and (max-width: 840px) {
+
+.mobile-title {
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+a {
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: blue;
+}
+
+.self-description {
+	width: 91%;
+	font-size: 16px;
+	line-height: 18px;
+	-webkit-columns: 2;
+  	-moz-columns: 2;
+  	columns: 2;
+  	margin-bottom: 0px;
+}
+
+.thegrid-work {
+	display: inline-block;
+	width: 92vw;
+	height: 96vw;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+.thegrid-project {
+	width: 92vw;
+	height: 67vw;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-NOline {
+	width: 92vw;
+	height: 96vw;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-mobiletext {
+	color: white;
+	display: inline-block;
+	width: 92vw;
+	height: auto;
+	border: 1px solid white;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	padding-bottom: 15px;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-work-1 {
+	display: none;
+}
+
+.thegrid-NOline {
+	display: none;
+
+}
+
+img {
+	max-width: 200%;
+}
+
+.HUES-1 {
+	width: 500vw;
+
+}
+
+.image-container-1 {
+	position: absolute;
+	width: 300vw;
+	top: 110.3vw;
+	right: -39.3px;
+	width: 65vw;
+	z-index: -100;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    padding-bottom: 200px;
+}
+
+}
+
+@media screen and (max-width: 740px){
+
+	.self-description {
+	width: 91%;
+	font-size: 16px;
+	line-height: 18px;
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+
+.mobile-title {
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+.description-title {
+	padding-left: 0px;
+}
+
+.self-description {
+	width: 91%;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+
+a {
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: blue;
+}
+
+
+.thegrid-work {
+	width: 92.6vw;
+	height: 96.4vw;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+.thegrid-project {
+	width: 92.6vw;
+	height: 67.6vw;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-mobiletext {
+	display: block;
+	width: 92.6vw;
+	height: auto;
+	border: 1px solid white;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	padding-bottom: 15px;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-work-1 {
+	display: none;
+}
+
+.outer-container {
+/*	background-color: red;*/
+	height: auto;
+	margin: 0 auto;
+	width: 96%;
+	z-index:-10;
+	margin-top: 15px;
+	margin-left: 0px;
+	margin-bottom: 350px;
+}
+
+.flex-container {
+/*	background-color: blue;*/
+	text-align: left;
+	width: 100%;
+}
+
+.thegrid-NOline {
+	display: none;
+
+}
+
+.image-container-1 {
+	position: absolute;
+	width: 300vw;
+	top: 150.3vw;
+	right: -39.3px;
+	width: 65vw;
+	z-index: -100;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    padding-bottom: 200px;
+}
+
+}
+}
+
+}
+</style>
+<body>
+	
+		<div class="outer-container" data-scroll-speed="6">
+			<div class="mobile-title">
+				<a id="back" href="../WORK/index.html" class="description-title">&larr;Back</a><br>
+			</div>
+
+		    <div class="flex-container">
+			      	<div class="thegrid-work">
+			      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_013.png">
+			      	</div>
+		      <div class="thegrid-mobiletext">
+			    	<h2>Hueṡ</h2>
+			    	<div class="self-description">
+			    	A logo for the Parsons Festival 2017 which features over 30 exhibitions, events, presentations, open studios, and programs that showcase the creative and intellectual achievements of Parsons' graduating students. This event is apart of NYCxDesign, a citywide initiative spearheaded by the New York City Council to promote design, and coincides with a series of major industry events.
+		      		</div>
+		      	</div>
+		      	<div class="thegrid-work-1">
+		      		<h2>Hueṡ</h2>
+			    	<div class="self-description">
+			    	A logo for the Parsons Festival 2017 which features over 30 exhibitions, events, presentations, open studios, and programs that showcase the creative and intellectual achievements of Parsons' graduating students. This event is apart of NYCxDesign, a citywide initiative spearheaded by the New York City Council to promote design, and coincides with a series of major industry events.
+					</div>		      	
+				</div>
+
+		      	<div class="thegrid-NOline">
+		      		<a href="../WORK/index.html" class="description-title">&larr;Back</a><br>
+		      	</div>
+		 	</div>
+
+		    
+		    <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 	 	<!-- <img class="workIMG" src="../assets/the-void/mine.jpg"> -->
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<!-- <img class="workIMG" src="../assets/the-void/the-void-logo.gif"> -->
+		      	 	</div>
+		    </div>
+
+		    <div class="flex-container">
+		    		<div class="thegrid-project">
+		      	 		<!-- <img class="workIMG" src="../assets/the-void/the-void-posters.png"> -->
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<!-- <img class="workIMG" src="../assets/the-void/linemark-2.jpg"> -->
+		      	 	</div>
+		    </div>
+
+		    <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 		<!-- <img class="workIMG" src="../assets/the-void/terrace-farm.jpg"> -->
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<!-- <img class="workIMG" src="../assets/the-void/the-void-laptop.png"> -->
+		      	 	</div>
+		    </div>
+
+		    <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 		<!-- <img class="workIMG" src="../assets/the-void/the-void-mobile.png"> -->
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<!-- <img class="workIMG" src="../assets/the-void/linemark-1.jpg"> -->
+		      	 	</div>
+		    </div>
+		    <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 		<!-- <img class="workIMG" src="../assets/the-void/logo-posters.png"> -->
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<!-- <img class="workIMG" src="../assets/the-void/the-void-product.png"> -->
+		      	 	</div>
+		    </div>
+		    </div>
+
+
+	    	<div class="footer">
+	    		<img class="footerimg" src="../assets/hues_footer.png"><br>
+	    		<txt>Dylan Hughes &copy; 2018</txt>
+	    	</div>
+
+	     <div class="image-container-1">
+	    	<img class="HUES-1"  src="../assets/HUES_WEB_1.png">
+	     </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+
+<script>
+
+$( ".button" ).click(function(){
+	$(".mobile-menu").slideToggle();
+	$(".images").toggle();
+	$(".intro").toggle();
+	$(".title").toggle();
+	$(".outer-container").toggle();
+	 });
+
+$( ".works" ).click(function(){
+	$(".works-menu").slideToggle();
+	 });
+
+var image = [
+	// 'hues-3.png',
+	'./assets/tompkins2.png',
+	'./assets/coffee.png',
+	'./assets/screenprint.png',
+	'./assets/all-boards.png',
+	'./assets/sp-books.png',
+	'./assets/league1.png',
+	'./assets/league-one.png',
+	'./assets/twit-book.png',
+	'./assets/sigal_museum.png',
+	'./assets/sigal-laptop.png',
+	'./assets/light-stand.png',
+	'./assets/Festival_0000_Layer-3-web.png',
+	];
+
+
+	var changePhoto = function() {
+		var url = image[Math.floor(Math.random() * image.length)];
+		$('.images').attr('src',url);
+		// $('.images').fadeIn(0).delay( 5200 ).fadeOut(800).fadeIn(0).delay( 5200 ).fadeOut(800);
+		console.log("change photo");
+	}
+
+	changePhoto();
+	window.setInterval(changePhoto, 3000);
+
+
+
+	var audio = $("#mySoundClip")[0];
+	$("#speak").mouseenter(function() {
+  	audio.play();
+	});
+	$("#speak").mouseout(function() {
+  	audio.pause();
+  	});
+
+  	var audio2 = $("#mySoundClip2")[0];
+	$("#speak2").mouseenter(function() {
+  	audio2.play();
+	});
+	$("#speak2").mouseout(function() {
+  	audio2.pause();
+  	});
+
+  	var audio3 = $("#mySoundClip3")[0];
+	$("#speak3").mouseenter(function() {
+  	audio3.play();
+	});
+	$("#speak3").mouseout(function() {
+  	audio3.pause();
+  	});
+
+  	var audio4 = $("#mySoundClip4")[0];
+	$("#speak4").mouseenter(function() {
+  	audio4.play();
+	});
+	$("#speak4").mouseout(function() {
+  	audio4.pause();
+  	});
+
+  	var audio5 = $("#mySoundClip5")[0];
+	$("#speak5").mouseenter(function() {
+  	audio5.play();
+	});
+	$("#speak5").mouseout(function() {
+  	audio5.pause();
+  	});
+
+  	var audio6 = $("#mySoundClip6")[0];
+	$("#speak6").mouseenter(function() {
+  	audio6.play();
+	});
+	$("#speak6").mouseout(function() {
+  	audio6.pause();
+  	});
+
+	  $.fn.moveIt = function(){
+	  var $window = $(window);
+	  var instances = [];
+	  
+	  $(this).each(function(){
+	    instances.push(new moveItItem($(this)));
+	  });
+	  
+	  window.addEventListener('scroll', function(){
+	    var scrollTop = $window.scrollTop();
+	    instances.forEach(function(inst){
+	      inst.update(scrollTop);
+	    });
+	  }, {passive: true});
+	}
+
+	var moveItItem = function(el){
+	  this.el = $(el);
+	  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+	};
+
+	moveItItem.prototype.update = function(scrollTop){
+	  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+	};
+
+	// Initialization
+	$(function(){
+	  $('[data-scroll-speed]').moveIt();
+	});
+
+	$(window).on('scroll', function () {
+    var pixs = $(document).scrollTop()
+    pixs = pixs / 35;
+    $(".image-container-1").css({"-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)" })     
+});
+
+</script>
+</html>

@@ -4,89 +4,69 @@
    <meta charset="utf-8">
    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="../main.css">
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&subset=latin-ext,vietnamese');
 </style>
 
-<!--   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Hueṡ Graphic Design Studio">
-  <meta name="keywords" content="hues,hueṡ,hue,hughes,graphic design,parsons,studio,portfolio,design,new york city,dylan,hughes,easton,easton pa,art,work,branding,books,photography,graphic,type,typography,communication,chill,chill dill,dill,ṡ,">
+  <meta name="keywords" content="hues,hueṡ,hue,hughes,graphic design,parsons,studio,portfolio,design,new york city,dylan,dylan hughes,easton,easton pa,art,work,branding,books,photography,graphic,type,typography,communication,chill,chill dill,dill,ṡ,">
   <meta name="author" content="Dylan Hughes">
-  <link rel="shortcut icon" type="image/png" href="./assets/HUES_LOGO.png">
-  <title>Hueṡ</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/HUES_LOGO.png">
+  <title>Dylan Hughes</title>
 </head>
 <style>
 
 body {
 	overflow:hidden;
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 
-.container {
-	width: 100%;
-}
 
 .outer-container {
-	display: table;
 	height: auto;
 	margin: 0 auto;
 	width: 100%;
-	padding-top: 15px;
-	padding-left: 15px;
 	z-index:-10;
-
-}
-
-.outer-container-2 {
-	display: table;
-	position: relative;
-	left: 20.5vw;
-	padding-left: 0px;
-	padding-top: 0px;
-	padding-bottom: 150px;
-	margin-top: 15.8vw;
-
-}
-
-.outer-container-3 {
-	display: table;
-	height: auto;
-	margin: 0 auto;
-	width: 100%;
-	padding-top: 150px;
+	margin-top: 15px;
 	padding-left: 15px;
-	z-index:-10;
+	margin-bottom: 350px;
 
 }
 
 .flex-container {
+/*	background-color: blue;*/
 	text-align: left;
-	width: 100%;
+	width: 98%;
 	height: auto;
-	margin: 0 auto;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-flex-direction: row;
+   	flex-direction: row;
+   	-webkit-justify-content: flex-start;
+   justify-content: flex-start;
 }
 
 .thegrid {
+	display: block;
 	width: 19.35vw;
 	height: 20.23vw;
-	border: 1px solid white;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
 	padding: 0;
 	margin: -1px;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
     z-index: 1;
 }
 
 .thegrid:hover {
-	background-color: rgba(255,255,255,0.1);
+	background-color: rgba(0,0,0,0.1);
 }
 
 .thegrid-NOline {
@@ -97,89 +77,79 @@ body {
 	margin: -1px;
 }
 
-.thegrid-Sound {
+
+.thegrid-work {
 	width: 19.35vw;
-	height: 20.23vw;
-	border: 1px solid white;
+	height: 20.27vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
 	padding: 0;
 	margin: -1px;
-	color: rgba(255,255,255,0);
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
-    z-index: 1; 
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
 }
 
-.thegrid-Sound:hover {
-	color: rgba(255,255,255,.5);
-	background-color: rgba(255,255,255,0.1);
+.thegrid-work:hover {
+	background-color: rgba(0,0,0,0.1);
 }
 
 .menu-container {
-	width: 19.35vw;
-	height: 20.23vw;
+	display: inline-table;
 	padding: 0;
+	padding-top: 5px;
 	margin: -1px;
 }
+
+
 a {
 	display: inline-block;
-	font-family: 'Space Mono', monospace;
+	font-family: 'helvetica', monospace;
 	text-align: left;
 	font-size: 14px;
 	line-height: 12px;
 	padding-top: 5px;
 	padding-left: 10px;
-	text-transform: uppercase;
+	text-transform:;
 	z-index: 1;
+	text-decoration: none;
+	color: blue;
+	-webkit-backface-visibility: hidden;
 }
 
 a:hover {
 	text-decoration: underline;
+	-webkit-backface-visibility: hidden;
+	color: blue;
 }
 
-.column {
+#work {
+	display: block;
+	padding-top: 0;
+	padding-left: 0;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+#work:hover {
+	display: block;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.row {
 
 /*	min-width: 200px;*/
 	padding: 0px;
 	margin: -0px;
 }
 
-.image-container-1 {
-	position: absolute;
-	top: 20.64vw;
-	right: 100px;
-	width: 65vw;
-	z-index: -100;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
-}
-
-.image-container-1:hover {
-}
-
-.image-container-2 {
-	position: absolute;
-	top: 152.6vw;
-	left: -14.9vw;
-	width: 58vw;
-	z-index: -100;
-	-webkit-transition: .52s; /* Safari */
-    transition: .52s;
-}
-
-.image-container-3 {
-	position: absolute;
-	top: 285vw;
-	right: 15vw;
-	width: 35vw;
-	height: 38vw;
-	z-index: -100;
-	overflow: hidden;
-}
 
 .HUES-LOGO {
-	width: 100%;
-	padding-left: 0px;
-	padding-top: 0px;
+	width: 88%;
+	text-align: left;
+	padding-left: 8px;
+	padding-top: 8px;
 }
 
 
@@ -187,15 +157,15 @@ a:hover {
 img {
   max-width: 100%;
   padding-bottom: 0px;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .title {
 	width: 100%;
-	color: ;
+	color: black;
 	text-align: left;
 	font-size: 13.4vw;
-	font-family: 'Space Mono', monospace;
+	font-family: 'helvetica', monospace;
 	font-weight: 400;
 	line-height: 11vw;
 	padding: 0;
@@ -204,6 +174,7 @@ img {
 }
 
 .title-one {
+	color: black;
 	position: absolute;
 	top: -175px;
 	z-index: -11;
@@ -229,14 +200,16 @@ p {
 }
 
 .description-title {
-	font-family: 'Space Mono', monospace;
+	display: inline;
+	font-family: 'helvetica';
+	font-weight: bold;
+	letter-spacing: -.6px;
 	text-align: left;
 	height: 100%;
 	font-size: 28px;
 	line-height: 30px;
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-left: 10px; 
-	text-transform: uppercase;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -246,439 +219,340 @@ p {
 	z-index: -1000;
 }
 
-.description-title-music {
-	font-family: 'Space Mono', monospace;
+.self-description {
+	width: 85%;
+	font-family: 'helvetica';
 	text-align: left;
-	height: 100%;
-	font-size: 28px;
-	line-height: 20px;
-	padding-top: 10px;
-	padding-left: 10px; 
-	text-transform: uppercase;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	z-index: -1000;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 11px;
+	padding-top: 5px; 
 }
 
 .artist {
 	display: inline-block;
 	font-family: 'Space Mono', monospace;
-	padding-top: 0;
+	height: 100%;
 	text-align: left;
-	font-size: 16px;
-	line-height: 5px;
-	text-transform: none;
+	font-size: 14px;
+	line-height: 12px;
+	padding-top: 5px;
+	padding-left: 10px;
+	text-transform: uppercase;
 	z-index: -1000;
+}
+
+
+.workIMG {
+	width: 100%;
+  	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+ 	align-items: center;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    text-align: center;
+	align-item: center;
+	-webkit-backface-visibility: hidden;
+}
+
+.workIMG:hover {
+	opacity: .7;
+}
+
+.mobile-title {
+	display: none;
+}
+
+.footer {
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	font-family: courier new;
+	margin-bottom: 40px;
+}
+
+.footerimg {
+	width: 50px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1040px) {
+
+.mobile-title {
+	display: inline;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.description-title {
+	padding-left: 0px;
+}
+
+.self-description {
+	width: 85%;
+	padding-left: 0px;
+}
+
+a {
+	padding-left: 0px;
+	color: blue;
+}
+
+.thegrid-work {
+	width: 30.756825vw;
+	height: 32.155585vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.flex-container {
+/*	background-color: blue;*/
+	text-align: left;
+	width: 96%;
+}
+
+.thegrid-NOline {
+	display: none;
+
+}
+
+
+@media screen and (max-width: 840px) {
+
+
+.mobile-title {
+	display: inline;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.description-title {
+	padding-left: 0px;
+}
+
+.self-description {
+	width: 85%;
+	padding-left: 0px;
+}
+
+a {
+	padding-left: 0px;
+	color: blue;
+}
+
+
+.thegrid-work {
+	width: 46.5vw;
+	height: 48.7vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+.thegrid-NOline {
+	width: 42.57vw;
+	height: 44.506vw;
+	border: 0px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+
+.flex-container {
+/*	background-color: blue;*/
+	text-align: left;
+	width: 96%;
+}
+
+
+.thegrid-NOline {
+	display: none;
+
 }
 
 
 @media screen and (max-width: 640px) {
 
 
-.column {
-	padding: 0px;
+.mobile-title {
+	display: inline;
+	width: 100%;
+	padding-bottom: 20px;
 }
 
+.description-title {
+	padding-left: 0px;
+}
 
+.self-description {
+	width: 85%;
+	padding-left: 0px;
+}
+
+a {
+	padding-left: 0px;
+	color: blue;
+}
+
+.thegrid-work {
+	width: 46.5013vw;
+	height: 48.56648vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-NOline {
+	display: none;
+
+}
+
+.outer-container {
+/*	background-color: red;*/
+	height: auto;
+	margin: 0 auto;
+	width: 95%;
+	z-index:-10;
+	margin-top: 15px;
+	margin-left: -1px;
+	margin-bottom: 350px;
+}
+
+.flex-container {
+/*	background-color: blue;*/
+	text-align: left;
+	width: 100%;
+}
+}
+}
 }
 </style>
 <body>
 
 	
-		
-
-<!-- 		<div class='menu'>
-			<a href="index.html">Home</a>
-			<a href="./work/index.html">Work</a>
-			<a href="./shop/index.html">Shop</a>
-			<a href="./about/index.html">About</a>
-		</div> -->
-<!-- 		<div class='button'></div>
-		<div class='mobile-menu'>
-			<a class="mobileMenu-page" href="index.html">Home</a>
-			<a class="mobileMenu-page works">Work</a>
-			<a class="mobileMenu-page" href="./shop/index.html">Shop</a>
-			<a class="mobileMenu-page" href="./about/index.html">About</a>
-			<div class="works-menu">
-				<a class="mobileMenu-page" href="./work/index.html">All</a>
-				<a class="mobileMenu-page" href="./books/index.html">Books</a>
-				<a class="mobileMenu-page" href="./branding/index.html">Branding</a>
-				<a class="mobileMenu-page" href="./print/index.html">Print</a>
-				<a class="mobileMenu-page" href="./type/index.html">Type</a>
-				<a class="mobileMenu-page" href="./web/index.html">Web</a>
-				<a class="mobileMenu-page" href="./video/index.html">Video</a>
+	
+		<div class="outer-container">
+			<div class="mobile-title">
+				<div class="description-title">Dylan Hughes</div><br>
+				<div class="self-description">Designer. BFA Communication Design major at Parsons School of Design.
+				</div>
+				<br>
+		      	<a href="../index.html">Resume</a><br>
+			    <a href="../index.html">Portfolio</a><br><br>
 			</div>
-		</div>
-		<h3></h3> -->
-
-	</div>
-	
-		<div class="outer-container" data-scroll-speed="6">
 		    <div class="flex-container">
-		      <div class="column">
 
-			      	<div  class="thegrid">
-			      		<img class="HUES-LOGO" src="./assets/HUES_WEB_LOGO.png">
+		    	 	<div class="thegrid-work">
+		      			<a id="work" href="../identity/index.html">
+		      			<img class="workIMG" src="../assets/PORTFOLIO_IMG_012.png">
+		      			</a>
+		      		</div>
+
+			      	<div class="thegrid-work">
+		      			<a id="work" href="../sigal-museum/index.html">
+		      			<img class="workIMG" src="../assets/PORTFOLIO_IMG_001.png">
+		      			</a>
+		      		</div>
+
+		      		<div class="thegrid-work">
+			      		<a id="work" href="../hues/index.html">
+			      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_013.png">
+			      		</a>
 			      	</div>
-			      	<div class="thegrid">
-			      		<p></p>
+
+			      	<div class="thegrid-work">
+		      			<a id="work" href="../parsons-festival/index.html">
+		      				<img class="workIMG" src="../assets/PORTFOLIO_IMG_016.gif">
+		      	   		 </a>
+		      		</div>
+
+		      		<div class="thegrid-NOline">
+		      		<div class="description-title">Dylan Hughes</div><br>
+		      		<div class="self-description">Designer. BFA Communication Design major at Parsons School <br>of Design.</div><br>
+		      		<a href="../index.html">Resume</a><br>
+			      	<a href="../index.html">Portfolio</a><br><br>
+		      	</div>
+			      	
+		      </div>
+		       <div class="flex-container">
+
+		      	<div class="thegrid-work">
+		      		<a id="work" href="../the-void/index.html">
+		      				<img class="workIMG" src="../assets/PORTFOLIO_IMG_009.png">
+		      			</a>
+		      	</div>
+
+		      	<div class="thegrid-work">
+			      		<a id="work" href="../bellevue-literary-review/index.html">
+			      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_022.png">
+			      		</a>
 			      	</div>
-			      	<div class="thegrid">
-			      		<p></p>
-			      	</div>
-			      	<div class="thegrid">
-			      		<div class="description-title">THE<br>VIRTUAL<br>WORLD</div>
-			      	</div>
-			      	<div class="thegrid-NOline">
-			      		<div class="description-title">THE<br>VIRTUAL<br>WORLD</div>
-			      	</div>
-		      </div>
-		      <div class="column">
 
-		      	<div class="thegrid">
-		      		<p>Lorem ipsum dolor sit amet cons
-					sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>
+				<div class="thegrid-work">
+		      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_023.png">
 		      	</div>
 
-		      	<div id="speak2" class="thegrid-Sound">
-		      		<div class="description-title-music">失望した<br>
-		      			<div class="artist">Eva - Rear View</div></div>
-		      		<!-- <div class="artist">EVA - REAR VIEW</div> -->
-		   
-		      	</div>
-
-		      	<div  class="thegrid">
-		      		<canvas id="stage" height="100%" width="100%"></canvas>
-		      	</div>
-
-		      	<div class="thegrid">
-		      		<p>Lorem ipsum dolor sit amet cons
-					sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>
-		    	</div>
-
-		      	<div class="thegrid-NOline">
-			      	<p>Lorem ipsum dolor sit amet cons
-					sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>
-			    </div>
-
-		      </div>
-
-		      <div class="column">
-
-		      	<div class="thegrid">
-		      		<p>Lorem ipsum dolor sit amet cons
-					sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid-NOline">
-			      	<p>Lorem ipsum dolor sit amet cons
-					sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>
-			    </div>
-		      </div>
-
-		      <div class="column">
-
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div id="speak" class="thegrid-Sound">
-		      		<div class="description-title-music">Futurismo<br>
-		      			<div class="artist">Eva - Rear View</div></div>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
+				<div  class="thegrid-work">
+		      		<a id="work" href="../repetition/index.html">
+		      			<img class="workIMG" src="../assets/PORTFOLIO_IMG_017.png">
+		      		</a>
 		      	</div>
 
 		      </div>
 
-		      <div class="column">
-		      	<div class="menu-container">
-			    	<a href="">hueṡ</a><br>
-			    	<a href="#title-one">The Grid</a><br>
-			    	<a href="">The Architect</a><br>
-			    	<a href="">commodity</a><br>
-			    	<a href="">information</a>
-	    		</div>
-		      </div>
-	    	</div>
-	  
-	    </div>
+		      <div class="flex-container">
 
-
-	    <div class="outer-container-2" data-scroll-speed="6">
-		    <div class="flex-container">
-		      <div class="column">
-
-		      	<div class="thegrid">
-		      		<div class="title">
-		      			<div id="title-one" class="title-one">
-	    				OCCUPY<br>THE<BR>GRID
-	    				</div>
-	    			</div>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div id="speak3" class="thegrid-Sound">
-		      		<div class="description-title-music">The End<br>
-		      			<div class="artist">Eva - Rear View</div></div>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid-NOline">
-			      	<p></p>
-			    </div>
-		      	<div class="thegrid">
-			      	<p>
-					</p>
-			    </div>
-
-		      </div>
-		      <div class="column">
-
-		      	<div  class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<div class="description-title">THE<br>VIRTUAL<br>WORLD</div>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid-NOline">
-			      	<p></p>
-			    </div>
-		      	<div class="thegrid">
-			      	<div class="description-title">THE<br>VIRTUAL<br>WORLD</div>
-			    </div>
-		      </div>
-
-		      <div class="column">
-
-		      	<div class="thegrid">
-		      		<p>Lorem ipsum dolor sit amet cons
-					sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p>Lorem ipsum dolor sit amet cons
-					sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid-NOline">
-			      	<p></p>
-			    </div>
-		      	<div class="thegrid">
-			      	<p>Lorem ipsum dolor sit amet cons
-					sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>
-			    </div>
-		      </div>
-
-		      <div class="column">
-
-		      	<div id="speak4" class="thegrid-Sound">
-		      		<div class="description-title-music">Realizations<br>
-		      			<div class="artist">Eva - Rear View</div></div>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<p>Lorem ipsum dolor sit amet cons
-					sectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-					</p>
-		      	</div>
-		      	<div class="thegrid">
-		      		<iframe src="https://open.spotify.com/embed?uri=spotify:user:22yazjr2iumu52htrk4llkq4a:playlist:0OtVWtPtx5CDq4aOmtOKNp" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe>
-		      		<p></p>
-		      	</div>
-		      	<div class="thegrid-NOline">
-			      	<p></p>
-			    </div>
-			    <div class="thegrid">
-			      	<p></p>
-			    </div>
-		      </div>
-	    	</div>
-
-	    </div>
-
-	     <div class="image-container-1">
-	    	<img class="HUES-1"  src="./assets/HUES_WEB_1.png">
-	     </div>
-	    <div class="image-container-2">
-	    	<img class="HUES-2"  src="./assets/HUES_WEB_2.png">
-	    </div>
-	    <div class="image-container-3"data-scroll-speed="6">
-	    	<img class="HUES-3" src="./assets/HUES_WEB_3.png">
-	    </div>
-
-	    <div class="outer-container-3" data-scroll-speed="6">
-		    <div class="flex-container">
-		      <div class="column">
-
-			      	<div class="thegrid">
-
-			 		</div>
-
-			      	<div class="thegrid">
-			      		<p></p>
-			      	</div>
-		      </div>
-		      <div class="column">
-
-		      	<div id="speak5" class="thegrid-Sound">
-		      		<div class="description-title-music">Summer Nights<br>
-		      			<div class="artist">Stylizer</div></div>
+		      	<div class="thegrid-work">
+		      		<a id="work" href="../tompkins-square/index.html">
+		      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_019.png">
+		      		</a>
 		      	</div>
 
-		      	<div class="thegrid">
-		      		<p></p>
+		      	<div class="thegrid-work">
+		      		<a id="work" href="../thinking-with-type/index.html">
+		      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_011.gif">
+		      		</a>
 		      	</div>
-
-		      </div>
-
-		      <div class="column">
-
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-		      </div>
-
-		      <div class="column">
-
-		      	<div class="thegrid">
-		      		<p></p>
-		      	</div>
-
-		      </div>
-	  
-	    </div>
-	    </div>
-
-	    <audio id="mySoundClip" >
-			<source src="./assets/audio/EVA-RearView-03Futurismo.mp3"></source>
-		</audio>
-
-		<audio id="mySoundClip2" >
-			<source src="./assets/audio/EVA-RearView-07失望した.mp3"></source>
-		</audio>
-
-		<audio id="mySoundClip3" >
-			<source src="./assets/audio/EVA-RearView-01TheEnd.mp3"></source>
-		</audio>
-
-		<audio id="mySoundClip4" >
-			<source src="./assets/audio/EVA-RearView-12Realizations.mp3"></source>
-		</audio>
-
-		<audio id="mySoundClip5" >
-			<source src="./assets/audio/vyra-aftermath.mp3"></source>
-		</audio>
-
-		<audio id="mySoundClip6" >
-			<source src="./assets/audio/vyra-summer-nights.mp3"></source>
-		</audio>
-
-	   
-	    
-
-<!-- 	    <div class="title">
-	    	
-	    	
-	    </div> -->
-
-
-
-<!-- 	<div class="title">Self Description</div>
-	
-	<div class="intro">
-			<br>
-			<p>Hello, my name is Dylan Hughes. I am a Graphic Designer and a BFA Communication Design major at Parsons School of Design. My main interest is branding where I enjoy developing idenities and systems that contain a compelling personality. </p>
-		
-		</div>
-	
-	<div class="title">Quotes for Credibility</div>
-	
-	<div class="intro">
-			<br>
-			<p>&ldquo;Design is the method of putting form and content together. Design, just as art, has multiple definitions; there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated.&rdquo;</p><br>
-			<p>&mdash; Paul Rand</p>
-			<br>
-			&#11044;
-			
-			
-			<br>
-			<p>&ldquo;I never, ever cheated. I don't condone cheating. But I would sometimes spread misinformation. This is a great tactic. Misinformation can be very important.&rdquo;</p><br>
-			
-			<p>&mdash; Rand Paul</p>
-			<br>
-			&#11044;
-			
-			
-			<br>
-			<p>&ldquo;Sometimes I mix up Paul Rand and Rand Paul.&rdquo;</p><br>
-			
-			<p>&mdash; Dylan Hughes</p>
-			
-		</div>
-		
-		
-		<div class="title">Featured Work</div>
-	
-	<div class="outer-container">
-		    <div class="flex-container">
-		      <div class="column">
-		      	<a id="imgLink" href="./work/sigal-museum/index.html">
-		      		<img src="./assets/sigal_museum.png">
-		      	</a>
-		      </div>
-		      <div class="column">
-		      <a id="imgLink" href="./work/parsons-festival/index.html">
-		      		<img src="./assets/Festival_0000_Layer-3-web.png">
-		      	</a>
 		      	
+
+		      	<div class="thegrid-work">
+		      		<a id="work" href="">
+		   			<img class="workIMG" src="../assets/PORTFOLIO_IMG_020.png">
+		   			</a>
+		      	</div>
+
+		      	<div class="thegrid-work">
+			      		<a id="work" href="../crunch-typeface/index.html">
+		      				<img class="workIMG" src="../assets/PORTFOLIO_IMG_021.png">
+		      			</a>
+			    </div>
+
 		      </div>
-		      <div class="column">
-		      	<a id="imgLink" href="./work/tompkins/index.html">
-		      		<img src="./assets/tompkins2.png">
-		      	</a>
+
 		      </div>
+
+		      <div class="footer">
+	    		<img class="footerimg" src="../assets/hues_footer.png"><br>
+	    		<txt>Dylan Hughes &copy; 2018</txt>
 	    	</div>
-	    </div>
-		 -->
-		</div>
+
 		
 </body>
 
@@ -697,125 +571,6 @@ $( ".button" ).click(function(){
 $( ".works" ).click(function(){
 	$(".works-menu").slideToggle();
 	 });
-
-var image = [
-	// 'hues-3.png',
-	'./assets/tompkins2.png',
-	'./assets/coffee.png',
-	'./assets/screenprint.png',
-	'./assets/all-boards.png',
-	'./assets/sp-books.png',
-	'./assets/league1.png',
-	'./assets/league-one.png',
-	'./assets/twit-book.png',
-	'./assets/sigal_museum.png',
-	'./assets/sigal-laptop.png',
-	'./assets/light-stand.png',
-	'./assets/Festival_0000_Layer-3-web.png',
-	];
-
-
-	var changePhoto = function() {
-		var url = image[Math.floor(Math.random() * image.length)];
-		$('.images').attr('src',url);
-		// $('.images').fadeIn(0).delay( 5200 ).fadeOut(800).fadeIn(0).delay( 5200 ).fadeOut(800);
-		console.log("change photo");
-	}
-
-	changePhoto();
-	window.setInterval(changePhoto, 3000);
-
-
-
-	var audio = $("#mySoundClip")[0];
-	$("#speak").mouseenter(function() {
-  	audio.play();
-	});
-	$("#speak").mouseout(function() {
-  	audio.pause();
-  	});
-
-  	var audio2 = $("#mySoundClip2")[0];
-	$("#speak2").mouseenter(function() {
-  	audio2.play();
-	});
-	$("#speak2").mouseout(function() {
-  	audio2.pause();
-  	});
-
-  	var audio3 = $("#mySoundClip3")[0];
-	$("#speak3").mouseenter(function() {
-  	audio3.play();
-	});
-	$("#speak3").mouseout(function() {
-  	audio3.pause();
-  	});
-
-  	var audio4 = $("#mySoundClip4")[0];
-	$("#speak4").mouseenter(function() {
-  	audio4.play();
-	});
-	$("#speak4").mouseout(function() {
-  	audio4.pause();
-  	});
-
-  	var audio5 = $("#mySoundClip5")[0];
-	$("#speak5").mouseenter(function() {
-  	audio5.play();
-	});
-	$("#speak5").mouseout(function() {
-  	audio5.pause();
-  	});
-
-  	var audio6 = $("#mySoundClip6")[0];
-	$("#speak6").mouseenter(function() {
-  	audio6.play();
-	});
-	$("#speak6").mouseout(function() {
-  	audio6.pause();
-  	});
-
-	  $.fn.moveIt = function(){
-	  var $window = $(window);
-	  var instances = [];
-	  
-	  $(this).each(function(){
-	    instances.push(new moveItItem($(this)));
-	  });
-	  
-	  window.addEventListener('scroll', function(){
-	    var scrollTop = $window.scrollTop();
-	    instances.forEach(function(inst){
-	      inst.update(scrollTop);
-	    });
-	  }, {passive: true});
-	}
-
-	var moveItItem = function(el){
-	  this.el = $(el);
-	  this.speed = parseInt(this.el.attr('data-scroll-speed'));
-	};
-
-	moveItItem.prototype.update = function(scrollTop){
-	  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
-	};
-
-	// Initialization
-	$(function(){
-	  $('[data-scroll-speed]').moveIt();
-	});
-
-	$(window).on('scroll', function () {
-    var pixs = $(document).scrollTop()
-    pixs = pixs / 25;
-    $(".image-container-1").css({"-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)" })
-});
-
-$(window).on('scroll', function () {
-    var pixs = $(document).scrollTop()
-    pixs = pixs / 225;
-    $(".image-container-2").css({"-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)"})
-});
 
 
 </script>

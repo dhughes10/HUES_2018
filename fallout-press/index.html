@@ -1,216 +1,817 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <head>
-<link rel="stylesheet" href="nonlinear.css">
+   <meta charset="utf-8">
+   <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="stylesheet" href="./main.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&subset=latin-ext,vietnamese');
+</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hueṡ Graphic Design Studio">
+  <meta name="keywords" content="hues,hueṡ,hue,hughes,graphic design,parsons,studio,portfolio,design,new york city,dylan,dylan hughes,easton,easton pa,art,work,branding,books,photography,graphic,type,typography,communication,chill,chill dill,dill,ṡ,">
+  <meta name="author" content="Dylan Hughes">
+  <link rel="shortcut icon" type="image/png" href="../assets/HUES_LOGO.png">
+  <title>Fallout Map</title>
 </head>
+<style>
 
+body {
+	overflow:hidden;
+	background-color: white;
+	color: black;
+}
+
+
+.outer-container {
+/*	background-color: red;*/
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
+	z-index:-10;
+	margin-top: 15px;
+	padding-left: 15px;
+	margin-bottom: 350px;
+
+}
+
+.flex-container {
+/*	background-color: blue;*/
+	text-align: left;
+	width: 98%;
+	height: auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-flex-direction: row;
+   	flex-direction: row;
+   	-webkit-justify-content: flex-start;
+   justify-content: flex-start;
+}
+
+.thegrid {
+	display: block;
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+}
+
+.thegrid:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.thegrid-NOline {
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 0px solid white;
+	padding: 0;
+	margin: -1px;
+}
+
+
+.thegrid-work {
+	width: 19.35vw;
+	height: 20.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-work-1 {
+	width: 58.05vw;
+	height: 20.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+
+
+.thegrid-project {
+	display: block;
+	width: 38.7vw;
+	height: 28.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    background-color: rgba(0,0,0,0);
+}
+
+.thegrid-project:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.thegrid-work:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.menu-container {
+	display: inline-table;
+	padding: 0;
+	padding-top: 5px;
+	margin: -1px;
+}
+
+a {
+	display: inline-block;
+	font-family: 'helvetica', monospace;
+	text-align: left;
+	font-size: 14px;
+	line-height: 12px;
+	text-transform:;
+	z-index: 100;
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#back{
+	color: blue;
+}
+#back:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+#work {
+	display: block;
+	padding-top: 0;
+	padding-left: 0;
+	backface-visibility: hidden;
+}
+
+#work:hover {
+	display: block;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.column {
+
+/*	min-width: 200px;*/
+	padding: 0px;
+	margin: -0px;
+}
+
+.HUES-LOGO {
+	width: 88%;
+	text-align: left;
+	padding-left: 8px;
+	padding-top: 8px;
+}
+
+
+
+img {
+  max-width: 100%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+
+.intro {
+	width: 100%;
+	margin:0px auto;
+	align-item: center;
+	text-align: center;
+	padding-bottom: 120px;
+}
+
+p {
+    font-family: helvetica; 
+	font-size: 1.03vw;
+	font-weight: 100;
+	line-height: ;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin: 0;
+}
+
+.description-title {
+	display: inline;
+	font-family: 'helvetica', monospace;
+	font-weight: bold;
+	letter-spacing: .05px;
+	text-align: left;
+	height: 100%;
+	font-size: 28px;
+	line-height: 30px;
+	padding-top: 5px;
+	padding-left: 10px; 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: -1000;
+}
+
+.self-description {
+	width: 30%;
+	height: auto;
+	font-family: 'helvetica';
+	text-align: left;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 13px;
+	padding-top: 5px;
+
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+ 	-webkit-column-gap: 1em;
+ 	-moz-column-gap: 1em;
+ 	column-gap: 1em;
+}
+
+h2 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-family: 'helvetica';
+	padding-left: 13px;
+}
+
+.artist {
+	display: inline-block;
+	font-family: 'Space Mono', monospace;
+	height: 100%;
+	text-align: left;
+	font-size: 14px;
+	line-height: 12px;
+	padding-top: 5px;
+	padding-left: 10px;
+	text-transform: uppercase;
+	z-index: -1000;
+}
+
+
+.workIMG {
+	width: 100%;
+  	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+ 	align-items: center;
+	-webkit-transition: .52s; /* Safari */
+    transition: .52s;
+    text-align: center;
+	align-item: center;
+	-webkit-backface-visibility: hidden;
+}
+
+.workIMG:hover {
+	opacity: .7;
+}
+
+.mobile-title {
+	display: none;
+}
+
+.thegrid-mobiletext {
+	display: none;
+}
+
+.footer {
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	font-family: courier new;
+	margin-bottom: 40px;
+}
+
+.footerimg {
+	width: 50px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+
+	.thegrid-NOline {
+	width: 10.35vw;
+	height: 20.23vw;
+	flex-wrap: none;
+}
+
+
+.thegrid-work {
+	width: 22vw;
+	height: auto;
+}
+
+.thegrid-work-1 {
+	width: 63.4vw;
+	height: auto;
+}
+
+.thegrid-project {
+	width: 42.7vw;
+	height: 31vw;
+}
+
+	.self-description {
+	width: 30%;
+	height: auto;
+
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+ 	-webkit-column-gap: 1em;
+ 	-moz-column-gap: 1em;
+ 	column-gap: 1em;
+  	margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1380px) {
+
+	.workIMG {
+	width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+	.self-description {
+	width: 30%;
+	height: auto;
+
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+ 	-webkit-column-gap: 1em;
+ 	-moz-column-gap: 1em;
+ 	column-gap: 1em;
+  	margin-bottom: 8px;
+}
+
+}
+
+
+@media screen and (max-width: 1040px) {
+
+	.mobile-title {
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+a {
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: blue;
+}
+
+
+	.self-description {
+	width: 30%;
+	height: auto;
+
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+ 	-webkit-column-gap: 1em;
+ 	-moz-column-gap: 1em;
+ 	column-gap: 1em;
+  	margin-bottom: 12px;
+}
+
+.thegrid-work {
+	display: none;
+}
+
+.thegrid-work-1 {
+	width: 91.4vw;
+	height: auto;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-project {
+	display: block;
+	width: 45.7vw;
+	height: 33.23vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    background-color: rgba(0,0,0,0);
+}
+.thegrid-NOline {
+	display: none;
+}
+
+}
+
+
+@media screen and (max-width: 840px) {
+
+.mobile-title {
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+a {
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: blue;
+}
+
+	.self-description {
+	width: 91%;
+	font-size: 16px;
+	line-height: 18px;
+	-webkit-columns: 2;
+  	-moz-columns: 2;
+  	columns: 2;
+  	  	margin-bottom: 0px;
+}
+
+.thegrid-work {
+	display: inline-block;
+	width: 92vw;
+	height: 96vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+.thegrid-project {
+	width: 92vw;
+	height: 67vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-NOline {
+	width: 92vw;
+	height: 96vw;
+	border: 0px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-mobiletext {
+	display: inline-block;
+	width: 92vw;
+	height: auto;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	padding-bottom: 15px;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-work-1 {
+	display: none;
+}
+
+.thegrid-NOline {
+	display: none;
+
+}
+
+@media screen and (max-width: 740px){
+
+	.self-description {
+	width: 91%;
+	font-size: 16px;
+	line-height: 18px;
+	-webkit-columns: 1;
+  	-moz-columns: 1;
+  	columns: 1;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+
+.mobile-title {
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+.description-title {
+	padding-left: 0px;
+}
+
+.self-description {
+	width: 91%;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+
+a {
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: blue;
+}
+
+
+.thegrid-work {
+	width: 92.6vw;
+	height: 96.4vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+.thegrid-project {
+	width: 92.6vw;
+	height: 67.6vw;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-mobiletext {
+	display: block;
+	width: 92.6vw;
+	height: auto;
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 0px;
+	padding: 0;
+	padding-bottom: 15px;
+	margin: -1px;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
+.thegrid-work-1 {
+	display: none;
+}
+
+.outer-container {
+/*	background-color: red;*/
+	height: auto;
+	margin: 0 auto;
+	width: 96%;
+	z-index:-10;
+	margin-top: 15px;
+	margin-left: 0px;
+	margin-bottom: 350px;
+}
+
+.flex-container {
+/*	background-color: blue;*/
+	text-align: left;
+	width: 100%;
+}
+
+.thegrid-NOline {
+	display: none;
+
+}
+
+}
+}
+
+}
+</style>
 <body>
-		<div id="draggable" class="container">
-			<div class="square one">
-				<div class="blanks first">
-					Fallout 4 reaffirms the elite status of <div class="word missing">Bethesda</div> Game Studios as among the finest development teams in the industry. Each of the last three games developed by Bethesda Games Studios were consensus <div class="word missing">Game of the Year</div> winners and rank with the highest-scoring titles in the industry. Fallout 4 is the follow up to the 2008 Game of the Year, <div class="word missing">Fallout 3</div>, and the first title from Bethesda Game Studios since the release of their global phenomenon and 2011 Game of the Year, <div class="word missing">The Elder Scrolls V: Skyrim</div>.
+	
+		<div class="outer-container">
+			<div class="mobile-title">
+				<a id="back" href="../WORK/index.html" class="description-title">&larr;Back</a><br>
+			</div>
+
+		    <div class="flex-container">
+			      	<div class="thegrid-work">
+			      		<img class="workIMG" src="../assets/PORTFOLIO_IMG_020.png">
+			      	</div>
+		      <div class="thegrid-mobiletext">
+			    	<h2>Fallout Map</h2>
+			    	<div class="self-description">
+			    	A logo for the Parsons Festival 2017 which features over 30 exhibitions, events, presentations, open studios, and programs that showcase the creative and intellectual achievements of Parsons' graduating students. This event is apart of NYCxDesign, a citywide initiative spearheaded by the New York City Council to promote design, and coincides with a series of major industry events.<br><br>
+			    	<a href="../fallout-press/demo/index.html">Fallout Map</a><br>
+		      		</div>
+		      	</div>
+		      	<div class="thegrid-work-1">
+		      		<h2>Fallout Map</h2>
+			    	<div class="self-description">
+			    	A logo for the Parsons Festival 2017 which features over 30 exhibitions, events, presentations, open studios, and programs that showcase the creative and intellectual achievements of Parsons' graduating students. This event is apart of NYCxDesign, a citywide initiative spearheaded by the New York City Council to promote design, and coincides with a series of major industry events.
+			    	<br><br>
+			    	<a href="../fallout-press/demo/index.html">Fallout Map</a><br>
+					</div>		      	
 				</div>
-			</div>
-			<div class="square two">
-				<div class="text encription2">
-					CVpk1oqVSsTwxp2B8hDbFgrYWnhhDHMeUiUmaj3tsMZmw
-					XNLqWW1WW1zoSq0AvPQBT5tAPRtmh6yU95MBcK7APfCPW
-					ufBOA6RTxZDyYczoBwcCzGcpmE6lewZu<div class="word encript-fans">fans</div>js42uhNDcM
-					nohWJ7OyqGnhea0yctmjCrN970mt4mKpVxrP3B8C768LH
-					uEEzEpoKQUciKLA3QWVpWOI5FYCqIyZrzHoVSMeQeQpF8
-					LQEPAAJ0qUjP9BJOa<div class="word encript-rated">rated</div>yZW25tC7VLLfcwV5XozrpHrvP
-					cYheuUbqVarWbsV51z6ZGfeYCspboPjlkFtLOOXIlcwGg
-					jMzKblZuEFSSnSIxM81MIMCE3YcC4aEHHMqQqeyHhgxIc
-					0GaZhASo7mkxKf98uB1EVtZzrGtFwWx7FjJVJazle3Dq0
-					LYarabIyZfNc3tgPQ0irRJScMESoy61grceMC6pYiGuux
-					Aqs60oUJAPfa5k4wqwYex7Dvvyw2ag5vyUhSDruq8XejX
-				</div>
-			</div>
-			<div class="square three">
-				<div class="text selection3">
-					<div class="word select-sales">sales</div>
-						<div class= "word-selection sales-text">
-							November 13, 2015 Bethesda Softworks, a ZeniMax Media company, today announced that its award-winning game, Fallout 4, is generating record sales at retail outlets and via digital download for Xbox One, PlayStation 4 computer entertainment system and PC. Bethesda launched with approximately 12 million units worldwide to meet day one demand, representing sales in excess of $750 million. The collector's edition, the Fallout 4 Pip-Boy Edition, sold out within hours of its announced availability.
-						</div>
-					<div class="word select-consumer">consumer</div>
-					<div class="word select-steam">steam</div>
-						<div class= "word-selection steam-text">
-							Digital sales of Fallout 4 are also breaking records. On Steam, Fallout 4 became the number one game played, surpassing the previous record for concurrent play with over 470,000 Fallout players. The companion app, Fallout Pip-Boy, became the number one game on the iTunes App Store. Fallout 4 also set the record as the most viewed game launch of all 2015 games, according to Twitch.
-						</div>
-				</div>
-			</div>
-			<div class="square four">
-				<div class="text encription4">
-					aupK642CugyeoaPpkMmZPyhTFbmBO25n6kuikXWHAtMsk
-					VPu4k3MycPA5mXl3NrMqsB6jn4T3W3joE2VSqnBw56VRJ
-					J7<div class="word encript-consumer">consumer</div>gjz5IDvgaGnxXmZHgqHRWnM9FaiD8sAvDtI
-					SeshiPxu97JTrVthtewWrclWYLIKt5m8VQQiYnZoYfrCP
-					2136qplCcR6gkl8nSAiaGpD<div class="word encript-vault">vault</div>ltapFJtTADyfL3aqVl42mD
-					C1yGOgWfBcGjv7g77RiDbjPPAGjZuaHu98ZPnnRzsXnrj
-					iVQu0XP6aNwzt7CU7R1jL6JwCIPDq1y5gO0ngS91lY8bS
-					Nt3melf013x7ZKpHh5HOthTOGW9p62mCzXpn8KoxPQlRL
-				</div>
-			</div>
-			<div class="square five">
-				<div class="blanks fith">
-					We're extremely proud of <div class="word missing">Todd Howard</div>, Game Director at Bethesda Game Studios, and his experienced team of developers for their talent and <div class="word missing">dedication</div> in creating this extraordinary game, said Vlatko Andonov, President of <div class="word missing">Bethesda Softworks</div>. Fallout 4 is a masterpiece in game development and storytelling, providing fans hundreds of hours of fun as they explore and are challenged by this fascinating, <div class="word missing">beautifully crafted world</div>.
-				</div>
-			</div>
-			<div class="square six">
-				<div class="text selection6">
-					<div class="word select-vault">vault</div>
-						<div class= "word-selection vault-text">
-							In Fallout 4 you play the sole survivor of Vault 111 and enter a world destroyed by nuclear war. Every second is a fight for survival, and every choice is yours. Only you can rebuild and determine the fate of the New England Wasteland. Welcome home.
-						</div>
-					<div class="word select-awards">awards</div>
-				</div>
-			</div>
-			<div class="square seven">
-				<div class="text selection7">
-					<div class="word select-rated">rated</div>
-						<div class= "word-selection rated-text">
-							Fallout 4 is rated M for Mature by the ESRB. For more information, visit: 
-							<a href="http://www.fallout4.com/">Fallout4.com</a>
-						</div>
-					<div class="word select-fans">fans</div>
-				</div>
-			</div>
-			<div class="square eight">
-				<div class="text encription8">
-					HIlE1mwN8Dauw1UbGxNzEZPMs03iyozt6q8K05ajGLHBE
-					l5O4bbZjbeSUTvyXhN9MvlBmAAFfxP5eELTpbIw6POgcq
-					xRmmlCi9XCKvDloUEyX0ShAVqcsrzsRyqUmxO18yH4rPH
-					FwHNRl2pNrKDqTVZ0eXmeiVXOZqbyo8D4FstslFl
-					lv7PuQxDTFoyOFEEjPWvVjAgJqMMP23pk83IRxjNeAyYu
-					ETLIDVj1a7lNkuUuJle4RfChNy3qlG6iZLK925SscYpVT
-					7x4vXTWQUgIizpbRQWT6PjA1KfmoWlhJxRRF2wBCR28sl
-					U3sjPGiUn3LeYVkSQf64<div class="word encript-release">release</div>eVCJAZz1aDIM3f5tonC
-					cOVDypLzROtqHzZtCLsUAApKl7xXxt2R4gjj12X5Cv2Jy
-					ArNqbwC6VQ9tPBilgeSSOgUhNZ6hMein53I3cqPSxrn9n
-					Qv5Fp56cQQFPCH65q45yp0YNN1gjolYzeLp<div class="word encript-studio">studio</div>yS1Sq
-					jTM3yBxtNsbtolBg5WKoGaMOr4i2Js0sMkf0FDVDifT5H
-					588S2zFUMLH1qahRTOeIBPt2StOfER1BrVoEa2V2DMfwz
-				</div>
-			</div>
-			<div class="square nine">
-				<div class="blanks ninth">
-					Following its release across the globe, this <div class="word missing">eagerly-awaited</div> title has garnered additional raves from some of the industry's most influential and respected critics. <div class="word missing">Reviewers</div> have noted for particular praise the game's storytelling, its vast, detailed world, crafting systems, <div class="word missing">exploration</div>, meaningful player choices, shooting mechanics, hours of gameplay, and most importantly, total <div class="word missing">freedom of action</div>.
-				</div>
-			</div>
 
-		<!-- text to be shown after word selection -->
+		      	<div class="thegrid-NOline">
+		      		<a href="../WORK/index.html" class="description-title">&larr;Back</a><br>
+		      	</div>
+		 	</div>
 
-			<div class= "popup fans">
-					A huge thanks to our fans that've made this all possible, said Todd Howard, Game Director on Fallout 4. After four years of development, it's not complete until our fans get to play it and make it their own. We can't wait to hear about their adventures.
-			</div>
-			<div class= "popup fans2">
-					A huge thanks to our fans that've made this all possible, said Todd Howard, Game Director on Fallout 4. After four years of development, it's not complete until our fans get to play it and make it their own. We can't wait to hear about their adventures.
-			</div>
-			<div class= "popup rated">
-					Fallout 4 is rated M for Mature by the ESRB. For more information, visit: www.Fallout4.com.
-			</div>
-			<div class= "popup consumer">
-					Major retailers have informed Bethesda of the tremendous consumer interest in Fallout 4, with some noting it was the most pre-ordered game this year. In addition, the Fallout 4 Pip-Boy Edition was the fastest-selling collector's edition of any game in history at leading retailers. Following the release, Bethesda was advised that launch day sales at some of the leading retail chains were the largest of any game released this year. Bethesda is now shipping more Fallout 4 units to retailers to meet ongoing demand.
-			</div>
-			<div class= "popup consumer2">
-					Major retailers have informed Bethesda of the tremendous consumer interest in Fallout 4, with some noting it was the most pre-ordered game this year. In addition, the Fallout 4 Pip-Boy Edition was the fastest-selling collector's edition of any game in history at leading retailers. Following the release, Bethesda was advised that launch day sales at some of the leading retail chains were the largest of any game released this year. Bethesda is now shipping more Fallout 4 units to retailers to meet ongoing demand.
-			</div>
-			<div class= "popup vault">
-					In Fallout 4 you play the sole survivor of Vault 111 and enter a world destroyed by nuclear war. Every second is a fight for survival, and every choice is yours. Only you can rebuild and determine the fate of the New England Wasteland. Welcome home.
-			</div>
-			<div class= "popup studio">
-					Fallout 4 reaffirms the elite status of Bethesda Game Studios as among the finest development teams in the industry. Each of the last three games developed by Bethesda Games Studios were consensus Game of the Year winners and rank with the highest-scoring titles in the industry. Fallout 4 is the follow up to the 2008 Game of the Year, Fallout 3, and the first title from Bethesda Game Studios since the release of their global phenomenon and 2011 Game of the Year, The Elder Scrolls V: Skyrim.
-			</div>
-			<div class= "popup release">
-					Following its release across the globe, this eagerly-awaited title has garnered additional raves from some of the industry's most influential and respected critics. Reviewers have noted for particular praise the game's storytelling, its vast, detailed world, crafting systems, exploration, meaningful player choices, shooting mechanics, hours of gameplay, and most importantly, total freedom of action.
-			</div>
-			<div class= "popup awards">
-					Fallout 4 has earned critical acclaim since its announcement in June 2015, winning over 160 awards at the 2015 Electronic Entertainment Expo (E3) including the coveted Game Critics Award for Best of Show, a selection voted on by an independent group of journalists from 39 leading media outlets that cover the videogame industry.
-			</div>
-		</div>	
+		    
+		    <div class="flex-container">
+		      	 	<div class="thegrid-project">
+		      	 	 	<img class="workIMG" src="../assets/fallout-press/fallout-press4.png">
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<img class="workIMG" src="../assets/fallout-press/fallout-press2.png">
+		      	 	</div>
+		    </div>
 
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		    <div class="flex-container">
+		    		<div class="thegrid-project">
+		      	 		<img class="workIMG" src="../assets/fallout-press/fallout-press3.png">
+		      	 	</div>
+		      	 	<div class="thegrid-project">
+		      	 		<img class="workIMG" src="../assets/fallout-press/fallout-press1.png">
+		      	 	</div>
+		    </div>
 
-	<script>
-
-	//draggable hand cursor//
-
-	    $( "#draggable" ).draggable();
-
-	    //funtions to open squares//
-
-	    $( ".square.one" ).click(function(){
-	        $( ".blanks.first" ).show();
-	 });
-	    $( ".square.two" ).click(function(){
-	        $( ".text.encription2" ).show();
-	 });
-	    $( ".square.three" ).click(function(){
-	        $( ".text.selection3" ).show();
-	 });
-	    $( ".square.four" ).click(function(){
-	        $( ".text.encription4" ).show();
-	 });
-	    $( ".square.five" ).click(function(){
-	        $( ".blanks.fith" ).show();
-	 });
-	    $( ".square.six" ).click(function(){
-	        $( ".text.selection6" ).show();
-	 });
-	    $( ".square.seven" ).click(function(){
-	        $( ".text.selection7" ).show();
-	 });
-	    $( ".square.eight" ).click(function(){
-	        $( ".text.encription8" ).show();
-	 });
-	    $( ".square.nine" ).click(function(){
-	        $( ".blanks.ninth" ).show();	        
-	 });
-
-	    //selected words to open more content//
-	    
-	    $( ".word.encript-fans" ).click(function(){
-	        $( ".popup.fans" ).show();	        
-	 });
-	    $( ".word.select-fans" ).click(function(){
-	        $( ".popup.fans2" ).show();	        
-	 });
-	    $( ".word.encript-rated" ).click(function(){
-	        $( ".popup.rated" ).show();	        
-	 });
-	    $( ".word.select-rated" ).click(function(){
-	        $( ".word-selection.rated-text" ).show();	        
-	 });
-	    $( ".word.encript-consumer" ).click(function(){
-	        $( ".popup.consumer" ).show();	        
-	 });
-	    $( ".word.encript-vault" ).click(function(){
-	        $( ".popup.vault" ).show();	        
-	 });
-	    $( ".word.encript-release" ).click(function(){
-	        $( ".popup.release" ).show();	        
-	 });
-	    $( ".word.encript-studio" ).click(function(){
-	        $( ".popup.studio" ).show();	        
-	 });
-	 	$( ".word.select-steam" ).click(function(){
-	        $( ".word-selection.steam-text" ).show();	        
-	 });
-	 	$( ".word.select-sales" ).click(function(){
-	        $( ".word-selection.sales-text" ).show();	        
-	 });
-	 	$( ".word.select-consumer" ).click(function(){
-	        $( ".popup.consumer2" ).show();	        
-	 });
-	 	$( ".word.select-vault" ).click(function(){
-	        $( ".word-selection.vault-text" ).show();	        
-	 });
-	 	$( ".word.select-awards" ).click(function(){
-	        $( ".popup.awards" ).show();	        
-	 });
+		    </div>
 
 
-	</script>
-
+	    	<div class="footer">
+	    		<img class="footerimg" src="../assets/hues_footer.png"><br>
+	    		<txt>Dylan Hughes &copy; 2018</txt>
+	    	</div>
 
 </body>
+
+<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+
+<script>
+
+$( ".button" ).click(function(){
+	$(".mobile-menu").slideToggle();
+	$(".images").toggle();
+	$(".intro").toggle();
+	$(".title").toggle();
+	$(".outer-container").toggle();
+	 });
+
+$( ".works" ).click(function(){
+	$(".works-menu").slideToggle();
+	 });
+
+var image = [
+	// 'hues-3.png',
+	'./assets/tompkins2.png',
+	'./assets/coffee.png',
+	'./assets/screenprint.png',
+	'./assets/all-boards.png',
+	'./assets/sp-books.png',
+	'./assets/league1.png',
+	'./assets/league-one.png',
+	'./assets/twit-book.png',
+	'./assets/sigal_museum.png',
+	'./assets/sigal-laptop.png',
+	'./assets/light-stand.png',
+	'./assets/Festival_0000_Layer-3-web.png',
+	];
+
+
+	var changePhoto = function() {
+		var url = image[Math.floor(Math.random() * image.length)];
+		$('.images').attr('src',url);
+		// $('.images').fadeIn(0).delay( 5200 ).fadeOut(800).fadeIn(0).delay( 5200 ).fadeOut(800);
+		console.log("change photo");
+	}
+
+	changePhoto();
+	window.setInterval(changePhoto, 3000);
+
+
+
+	var audio = $("#mySoundClip")[0];
+	$("#speak").mouseenter(function() {
+  	audio.play();
+	});
+	$("#speak").mouseout(function() {
+  	audio.pause();
+  	});
+
+  	var audio2 = $("#mySoundClip2")[0];
+	$("#speak2").mouseenter(function() {
+  	audio2.play();
+	});
+	$("#speak2").mouseout(function() {
+  	audio2.pause();
+  	});
+
+  	var audio3 = $("#mySoundClip3")[0];
+	$("#speak3").mouseenter(function() {
+  	audio3.play();
+	});
+	$("#speak3").mouseout(function() {
+  	audio3.pause();
+  	});
+
+  	var audio4 = $("#mySoundClip4")[0];
+	$("#speak4").mouseenter(function() {
+  	audio4.play();
+	});
+	$("#speak4").mouseout(function() {
+  	audio4.pause();
+  	});
+
+  	var audio5 = $("#mySoundClip5")[0];
+	$("#speak5").mouseenter(function() {
+  	audio5.play();
+	});
+	$("#speak5").mouseout(function() {
+  	audio5.pause();
+  	});
+
+  	var audio6 = $("#mySoundClip6")[0];
+	$("#speak6").mouseenter(function() {
+  	audio6.play();
+	});
+	$("#speak6").mouseout(function() {
+  	audio6.pause();
+  	});
+
+	  $.fn.moveIt = function(){
+	  var $window = $(window);
+	  var instances = [];
+	  
+	  $(this).each(function(){
+	    instances.push(new moveItItem($(this)));
+	  });
+	  
+	  window.addEventListener('scroll', function(){
+	    var scrollTop = $window.scrollTop();
+	    instances.forEach(function(inst){
+	      inst.update(scrollTop);
+	    });
+	  }, {passive: true});
+	}
+
+	var moveItItem = function(el){
+	  this.el = $(el);
+	  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+	};
+
+	moveItItem.prototype.update = function(scrollTop){
+	  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+	};
+
+	// Initialization
+	$(function(){
+	  $('[data-scroll-speed]').moveIt();
+	});
+
+	$(window).on('scroll', function () {
+    var pixs = $(document).scrollTop()
+    pixs = pixs / 35;
+    $(".image-container-1").css({"-webkit-filter": "blur("+pixs+"px)","filter": "blur("+pixs+"px)" })     
+});
+
+</script>
+</html>
